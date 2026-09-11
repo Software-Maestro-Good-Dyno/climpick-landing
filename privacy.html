@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>개인정보처리방침 — 클라임픽 ClimPick</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="클라임픽(ClimPick) 개인정보처리방침">
+<meta name="theme-color" content="#0A0E0A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&family=Archivo:ital,wght@1,900&display=swap">
+<style>
+  :root {
+    --night: #0A0E0A; --night-line: #243024; --chalk: #F3F4EE; --paper: #FFFFFF;
+    --ink: #0E120E; --lime: #5BE36A; --green: #2FAE3E; --muted: #58635A; --line: #DCE0D8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--chalk); color: var(--ink);
+    font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.75; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: anywhere;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 3px solid #FFC83D; outline-offset: 2px; }
+  .wrap { max-width: 800px; margin: 0 auto; padding-inline: 24px; }
+
+  header.top { background: var(--night); color: #F1F5EF; padding-block: 18px 56px; }
+  .top-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .wordmark { font-family: "Archivo", sans-serif; font-style: italic; font-weight: 900; font-size: 22px; color: var(--lime); text-decoration: none; }
+  .switch { display: flex; gap: 6px; }
+  .switch a { color: #C9D2C8; text-decoration: none; font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,.18); }
+  .switch a[aria-current="page"] { background: var(--lime); border-color: var(--lime); color: var(--ink); }
+  header.top h1 { font-family: "Black Han Sans", sans-serif; font-weight: 400; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; margin-top: 44px; }
+  header.top .meta { margin-top: 10px; color: #9DA99C; font-size: 14px; }
+
+  main { padding-block: 0 72px; }
+  .doc { background: var(--paper); border-radius: 20px; margin-top: -28px; padding: clamp(24px, 5vw, 48px); box-shadow: 0 10px 30px rgba(20,40,18,.06); }
+  .intro { color: var(--muted); }
+
+  .toc { margin-top: 28px; padding: 18px 22px; border-radius: 14px; background: var(--chalk); }
+  .toc strong { font-size: 14px; }
+  .toc ol { margin-top: 8px; padding-left: 1.4em; columns: 2; column-gap: 28px; font-size: 14px; }
+  .toc li { break-inside: avoid; }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { color: var(--green); text-decoration: underline; }
+
+  section { margin-top: 44px; scroll-margin-top: 16px; }
+  h2 { font-size: 19px; font-weight: 700; line-height: 1.4; padding-left: 14px; position: relative; }
+  h2::before { content: ""; position: absolute; left: 0; top: .3em; width: 5px; height: 1.05em; background: var(--lime); transform: skewX(-14deg); }
+  h3 { font-size: 16px; font-weight: 700; margin-top: 22px; }
+  p, ul, ol, .table { margin-top: 10px; }
+  ul, ol { padding-left: 1.3em; }
+  li + li { margin-top: 4px; }
+  li > ul { margin-top: 4px; }
+  .note { font-size: 14px; color: var(--muted); }
+  .box { margin-top: 12px; padding: 14px 18px; border-radius: 12px; background: #F1FBF2; border: 1px solid #CFEFD3; font-size: 15px; }
+
+  .table { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); border-radius: 12px; }
+  table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 14px; line-height: 1.6; }
+  th, td { padding: 10px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+  tr:last-child td { border-bottom: 0; }
+  th { background: var(--chalk); font-weight: 700; white-space: nowrap; }
+
+  footer { background: var(--night); color: #9DA99C; font-size: 13px; padding-block: 32px; text-align: center; }
+  footer a { color: #C9D2C8; text-decoration: none; margin: 0 8px; }
+  footer a:hover { color: var(--lime); }
+
+  @media (max-width: 560px) {
+    .wrap { padding-inline: 16px; }
+    .toc ol { columns: 1; }
+    .doc { border-radius: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="top-row">
+      <a class="wordmark" href="index.html">ClimPick</a>
+      <nav class="switch" aria-label="정책 문서">
+        <a href="privacy.html" aria-current="page">개인정보처리방침</a>
+        <a href="terms.html">이용약관</a>
+      </nav>
+    </div>
+    <h1>개인정보처리방침</h1>
+    <p class="meta">시행일 2026년 9월 11일</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article class="doc">
+      <p class="intro">굿다이노팀(이하 "운영자")는 클라이밍 기록 앱 클라임픽(ClimPick, 이하 "서비스")을 운영하면서 「개인정보 보호법」 등 관련 법령을 지키고, 이용자의 개인정보를 안전하게 처리하기 위해 다음과 같이 개인정보처리방침을 공개합니다.</p>
+
+      <nav class="toc" aria-label="목차">
+        <strong>목차</strong>
+        <ol>
+          <li><a href="#p1">수집하는 개인정보와 수집 방법</a></li>
+          <li><a href="#p2">개인정보의 이용 목적</a></li>
+          <li><a href="#p3">다른 이용자에게 공개되는 정보</a></li>
+          <li><a href="#p4">보유 기간과 파기</a></li>
+          <li><a href="#p5">제3자 제공</a></li>
+          <li><a href="#p6">처리위탁과 국외이전</a></li>
+          <li><a href="#p7">이용 행태 정보의 분석</a></li>
+          <li><a href="#p8">이용자의 권리와 행사 방법</a></li>
+          <li><a href="#p9">만 14세 미만 아동</a></li>
+          <li><a href="#p10">안전성 확보 조치</a></li>
+          <li><a href="#p11">쿠키 등 자동 수집 장치</a></li>
+          <li><a href="#p12">개인정보 보호책임자</a></li>
+          <li><a href="#p13">권익침해 구제 방법</a></li>
+          <li><a href="#p14">방침의 변경</a></li>
+        </ol>
+      </nav>
+
+      <section id="p1">
+        <h2>1. 수집하는 개인정보와 수집 방법</h2>
+        <p>운영자는 서비스 제공에 필요한 최소한의 개인정보만 수집합니다. 전화번호, 실명, 생년월일, GPS 위치 정보는 수집하지 않습니다.</p>
+        <div class="table">
+          <table>
+            <thead><tr><th>구분</th><th>수집 항목</th><th>필수 여부</th></tr></thead>
+            <tbody>
+              <tr><td>Google 로그인</td><td>Google 회원 식별값, 이름, 프로필 사진 URL</td><td>필수</td></tr>
+              <tr><td>Apple 로그인</td><td>Apple 회원 식별값</td><td>필수</td></tr>
+              <tr><td>이메일 가입</td><td>이메일 주소, 비밀번호(암호화하여 저장)</td><td>필수</td></tr>
+              <tr><td>로그인 공통</td><td>기기 식별값(앱이 생성한 값)</td><td>필수</td></tr>
+              <tr><td>프로필</td><td>닉네임</td><td>필수</td></tr>
+              <tr><td>프로필</td><td>프로필 이미지, 한줄소개, 클라이밍 경력, 인스타그램 주소, 키, 리치, 성별, 관심 암장, 홈짐, 시간대, 언어</td><td>선택</td></tr>
+              <tr><td>등반 기록</td><td>암장, 섹터, 난이도, 홀드 색, 완등 여부, 등반일, 시도 횟수, 코멘트, 영상, 썸네일, 운동 시작·종료 시각</td><td>기능 이용 시</td></tr>
+              <tr><td>커뮤니티</td><td>댓글, 좋아요, 북마크, 팔로우, 차단, 신고 사유와 내용</td><td>기능 이용 시</td></tr>
+              <tr><td>크루</td><td>크루 가입 정보, 인증 사진과 캡션, 번개 모임 정보, 크루 채팅 메시지</td><td>기능 이용 시</td></tr>
+              <tr><td>암장 정보 제보</td><td>난이도·홀드 색 체계 제보, 탈거 제보</td><td>기능 이용 시</td></tr>
+              <tr><td>자동 생성 정보</td><td>서비스 이용 기록(화면 조회·기능 사용 기록), 레이팅·티어·활동 통계, 접속 일시, 접속 IP 주소, 서버 오류 기록, 기기 모델, 앱·OS 버전, 분석 도구가 생성한 기기 식별자</td><td>자동 수집</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>수집 방법</h3>
+        <ul>
+          <li>회원가입, 프로필 작성·수정, 기록 등록 등 이용자가 앱에 직접 입력하거나 올리는 경우</li>
+          <li>이용자가 Google 또는 Apple 계정으로 로그인할 때 해당 회사로부터 전달받는 경우. Google 계정의 이메일 주소는 전달받더라도 저장하지 않습니다.</li>
+          <li>서비스를 이용하는 과정에서 자동으로 생성되는 경우</li>
+        </ul>
+        <div class="box">사진과 영상 파일에는 촬영 위치나 기기 정보 같은 메타데이터가 들어 있을 수 있습니다. 크루 인증 사진은 서버에서 메타데이터를 제거하지만, 그 밖의 영상과 프로필 이미지는 원본 그대로 저장되니 올리기 전에 확인해 주세요.</div>
+      </section>
+
+      <section id="p2">
+        <h2>2. 개인정보의 이용 목적</h2>
+        <ul>
+          <li><strong>회원 관리</strong> — 회원 식별, 로그인 유지, 기기별 로그인 관리, 탈퇴 처리, 부정 이용 방지</li>
+          <li><strong>서비스 제공</strong> — 등반 기록과 영상 저장·재생, 피드, 캘린더와 월간 통계, 레이팅, 암장별 문제 모아보기</li>
+          <li><strong>커뮤니티와 크루</strong> — 댓글, 좋아요, 팔로우, 차단, 크루 가입·인증·번개·채팅, 크루 리포트</li>
+          <li><strong>서비스 품질 관리</strong> — 신고 대응, 암장 정보 제보 반영, 오류 확인</li>
+          <li><strong>서비스 개선</strong> — 기능 이용 통계 분석(7항 참고)</li>
+        </ul>
+      </section>
+
+      <section id="p3">
+        <h2>3. 다른 이용자에게 공개되는 정보</h2>
+        <p>클라임픽은 클라이머들이 서로의 기록을 보는 서비스이기 때문에, 아래 정보는 다른 이용자에게 공개됩니다.</p>
+        <ul>
+          <li><strong>프로필</strong> — 닉네임, 프로필 이미지, 한줄소개, 클라이밍 경력, 인스타그램 주소, 키, 리치, 성별, 관심 암장, 홈짐, 레이팅·티어, 팔로워 수. 서로 차단하지 않은 모든 회원이 볼 수 있습니다. 선택 항목은 입력하지 않으면 공개되지 않습니다.</li>
+          <li><strong>영상이 있는 등반 기록</strong> — 기록 내용과 영상, 댓글, 좋아요. 로그인하지 않은 사람도 볼 수 있습니다.</li>
+          <li><strong>공유 링크</strong> — 기록의 공유 링크를 받은 사람은 로그인 없이 작성자의 닉네임·프로필 이미지와 기록 내용·영상을 볼 수 있습니다. 링크는 해당 기록을 삭제하면 더 이상 열리지 않습니다.</li>
+          <li><strong>크루</strong> — 크루 목록, 크루 소개, 멤버 목록은 로그인한 회원이 볼 수 있고, 인증 사진과 채팅은 해당 크루 멤버만 볼 수 있습니다.</li>
+        </ul>
+        <p class="note">월간·누적 통계는 본인만 볼 수 있습니다.</p>
+      </section>
+
+      <section id="p4">
+        <h2>4. 보유 기간과 파기</h2>
+        <p>운영자는 이용 목적을 달성하면 개인정보를 지체 없이 파기합니다. 다만 아래의 경우에는 정해진 기간 동안 보관합니다.</p>
+        <div class="table">
+          <table>
+            <thead><tr><th>정보</th><th>보유 기간</th></tr></thead>
+            <tbody>
+              <tr><td>회원 정보와 이용자가 작성한 기록·영상·댓글·좋아요·북마크·크루 인증 사진·번개</td><td>회원 탈퇴 후 30일. 30일 안에 같은 계정으로 다시 로그인하면 계정이 복구됩니다.</td></tr>
+              <tr><td>삭제한 등반 기록의 영상·썸네일 파일</td><td>기록 삭제 또는 영상 교체 후 30일</td></tr>
+              <tr><td>크루 채팅 메시지</td><td>크루의 대화 흐름을 유지하기 위해 탈퇴 후에도 남으며, 작성자는 "탈퇴한 사용자"로 표시됩니다. 크루가 해산되면 30일 뒤 파기합니다.</td></tr>
+              <tr><td>신고·제보 기록</td><td>부정 이용 방지와 분쟁 대응을 위해 회원 탈퇴 후 1년</td></tr>
+              <tr><td>서버 접속·오류 기록</td><td>수집일로부터 30일</td></tr>
+              <tr><td>이용 통계 분석 데이터(Amplitude)</td><td>위탁 계약 종료 시까지. 회원번호 형태로만 보관되어 이름·이메일 등으로 개인을 직접 알아볼 수 없습니다.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>탈퇴 후 30일이 지나면 인증 정보와 프로필 정보를 삭제하고, 레이팅 등 활동 통계는 개인을 알아볼 수 없도록 처리한 뒤 서비스 통계 목적으로만 보관합니다. 이용자의 기록이 삭제될 때 그 기록에 다른 이용자가 남긴 댓글과 좋아요도 함께 삭제됩니다.</p>
+        <h3>파기 방법</h3>
+        <ul>
+          <li>데이터베이스와 파일 저장소의 전자 파일은 복구할 수 없는 방법으로 삭제합니다.</li>
+          <li>종이 문서로 된 개인정보는 보관하지 않습니다.</li>
+        </ul>
+      </section>
+
+      <section id="p5">
+        <h2>5. 제3자 제공</h2>
+        <p>운영자는 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만 이용자가 미리 동의했거나, 법령에 특별한 규정이 있거나 수사기관이 법령에 따른 절차로 요청한 경우에는 예외로 합니다.</p>
+      </section>
+
+      <section id="p6">
+        <h2>6. 처리위탁과 국외이전</h2>
+        <p>운영자는 서비스 운영을 위해 아래와 같이 개인정보 처리 업무를 위탁하고 있습니다. 위탁받은 회사가 관련 법령을 지키도록 관리합니다.</p>
+        <div class="table">
+          <table>
+            <thead><tr><th>수탁자</th><th>위탁 업무</th><th>처리 위치</th></tr></thead>
+            <tbody>
+              <tr><td>Amazon Web Services, Inc.</td><td>서버·데이터베이스 운영, 영상·이미지 파일 저장</td><td>대한민국(서울 리전)</td></tr>
+              <tr><td>Amplitude, Inc.</td><td>서비스 이용 통계 분석</td><td>미국</td></tr>
+              <tr><td>Apple Inc.</td><td>Apple 로그인 연동과 탈퇴 시 연동 해제</td><td>미국</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>국외이전 상세</h3>
+        <p>아래 정보는 서비스 이용 계약을 이행하기 위해 국외로 이전되며, 이 방침에 공개하는 것으로 이전 사실을 알립니다.</p>
+        <div class="table">
+          <table>
+            <tbody>
+              <tr><th>이전받는 자</th><td>Amplitude, Inc. (privacy@amplitude.com)</td></tr>
+              <tr><th>이전 국가</th><td>미국</td></tr>
+              <tr><th>이전 항목</th><td>내부 회원번호, 서비스 이용 이벤트의 종류와 발생 일시(가입, 탈퇴, 기록 등록, 댓글 작성, 좋아요, 팔로우, 채팅 전송, 크루 가입·인증, 번개 생성·참여 등), 이벤트 관련 정보(완등 여부, 시도 횟수, 영상 첨부 여부, 팔로우한 상대의 회원번호, 채팅방 번호 등), 화면 조회 기록, 기기 정보(분석 도구가 생성한 기기 식별자, 기기 모델, 앱·OS 버전)<br><span class="note">닉네임, 이메일, 댓글·채팅 내용, 영상은 이전하지 않습니다.</span></td></tr>
+              <tr><th>이전 일시와 방법</th><td>서비스 이용 시점에 암호화된 네트워크로 전송</td></tr>
+              <tr><th>이용 목적</th><td>서비스 이용 통계 분석과 기능 개선</td></tr>
+              <tr><th>보유 기간</th><td>위탁 계약 종료 시까지</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table">
+          <table>
+            <tbody>
+              <tr><th>이전받는 자</th><td>Apple Inc. (<a href="https://www.apple.com/kr/legal/privacy/contact/" target="_blank" rel="noopener">개인정보 문의</a>)</td></tr>
+              <tr><th>이전 국가</th><td>미국</td></tr>
+              <tr><th>이전 항목</th><td>Apple 로그인 인증 토큰, 탈퇴 시 연동 해제를 위한 인증 코드</td></tr>
+              <tr><th>이전 일시와 방법</th><td>Apple 계정으로 로그인하거나 탈퇴할 때 암호화된 네트워크로 전송</td></tr>
+              <tr><th>이용 목적</th><td>Apple 로그인 확인, 탈퇴 시 연동 해제</td></tr>
+              <tr><th>보유 기간</th><td>Apple의 개인정보 처리방침에 따름</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">국외이전을 원하지 않으면 <a href="#p12">개인정보 보호책임자</a>에게 알려 주세요. 다만 Apple 로그인 연동은 해당 로그인 방식을 사용하는 데 꼭 필요하므로, 거부하면 Apple 로그인을 이용할 수 없습니다.</p>
+      </section>
+
+      <section id="p7">
+        <h2>7. 이용 행태 정보의 분석</h2>
+        <p>운영자는 어떤 기능이 많이 쓰이는지 파악해 서비스를 개선하기 위해 앱 이용 기록(6항의 이벤트)을 분석합니다. 이 정보는 맞춤형 광고에 사용하지 않고, 광고 사업자에게 제공하지 않습니다.</p>
+      </section>
+
+      <section id="p8">
+        <h2>8. 이용자의 권리와 행사 방법</h2>
+        <p>이용자는 언제든지 자신의 개인정보에 대해 다음 권리를 행사할 수 있습니다.</p>
+        <ul>
+          <li><strong>열람·정정</strong> — 앱의 프로필 수정 화면에서 직접 확인하고 고칠 수 있습니다. 닉네임은 30일에 한 번 바꿀 수 있습니다.</li>
+          <li><strong>삭제</strong> — 기록, 댓글, 채팅 메시지는 각 화면에서 직접 삭제할 수 있습니다.</li>
+          <li><strong>회원 탈퇴</strong> — 앱 설정에서 탈퇴할 수 있습니다. 탈퇴 후 30일 동안은 같은 계정으로 로그인하면 복구되고, 30일이 지나면 4항에 따라 파기됩니다.
+            <ul>
+              <li>활동 중인 크루의 크루장은 크루를 해산하거나 크루를 나간 뒤 탈퇴할 수 있습니다.</li>
+              <li>Apple 계정은 탈퇴할 때 Apple 재인증이 필요합니다.</li>
+            </ul>
+          </li>
+          <li><strong>처리 정지·동의 철회와 그 밖의 요청</strong> — <a href="#p12">개인정보 보호책임자</a>에게 이메일로 요청해 주세요. 지체 없이, 늦어도 10일 안에 처리 결과를 알려 드립니다.</li>
+        </ul>
+        <p class="note">법정대리인이나 위임받은 사람을 통해서도 권리를 행사할 수 있으며, 이 경우 위임장을 제출해야 합니다.</p>
+      </section>
+
+      <section id="p9">
+        <h2>9. 만 14세 미만 아동</h2>
+        <p>서비스는 만 14세 이상만 가입할 수 있으며, 운영자는 만 14세 미만 아동의 개인정보를 알면서 수집하지 않습니다. 만 14세 미만 아동이 가입한 사실을 알게 되면 해당 계정의 개인정보를 지체 없이 파기합니다.</p>
+      </section>
+
+      <section id="p10">
+        <h2>10. 안전성 확보 조치</h2>
+        <ul>
+          <li>비밀번호는 복호화할 수 없는 방식(BCrypt)으로 암호화해 저장합니다.</li>
+          <li>로그인 토큰은 기기의 보안 저장소(iOS Keychain)에 암호화해 보관합니다.</li>
+          <li>앱과 서버 사이의 모든 통신은 암호화(HTTPS)합니다.</li>
+          <li>로그인 토큰에 유효 기간을 두고, 탈퇴하면 즉시 무효화합니다.</li>
+          <li>개인정보를 다루는 서버와 관리 도구에 대한 접근 권한을 필요한 인원으로 제한합니다.</li>
+        </ul>
+      </section>
+
+      <section id="p11">
+        <h2>11. 쿠키 등 자동 수집 장치</h2>
+        <p>클라임픽 앱은 쿠키를 사용하지 않습니다. 운영자가 사용하는 관리자 웹 도구에서만 로그인 유지와 보안을 위한 쿠키를 사용합니다.</p>
+      </section>
+
+      <section id="p12">
+        <h2>12. 개인정보 보호책임자</h2>
+        <p>개인정보 처리에 관한 문의, 불만, 피해 구제 요청은 아래로 연락해 주세요.</p>
+        <div class="table">
+          <table>
+            <tbody>
+              <tr><th>개인정보 보호책임자</th><td>최유성</td></tr>
+              <tr><th>소속</th><td>굿다이노팀</td></tr>
+              <tr><th>이메일</th><td><a href="mailto:gooddynoteam@gmail.com">gooddynoteam@gmail.com</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="p13">
+        <h2>13. 권익침해 구제 방법</h2>
+        <p>개인정보 침해로 인한 구제가 필요하면 아래 기관에 분쟁 조정이나 상담을 신청할 수 있습니다.</p>
+        <ul>
+          <li>개인정보분쟁조정위원회 — 1833-6972 (<a href="https://www.kopico.go.kr" target="_blank" rel="noopener">www.kopico.go.kr</a>)</li>
+          <li>개인정보침해신고센터 — 국번 없이 118 (<a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">privacy.kisa.or.kr</a>)</li>
+          <li>대검찰청 — 국번 없이 1301 (<a href="https://www.spo.go.kr" target="_blank" rel="noopener">www.spo.go.kr</a>)</li>
+          <li>경찰청 — 국번 없이 182 (<a href="https://ecrm.police.go.kr" target="_blank" rel="noopener">ecrm.police.go.kr</a>)</li>
+        </ul>
+      </section>
+
+      <section id="p14">
+        <h2>14. 방침의 변경</h2>
+        <p>이 방침의 내용이 바뀌면 시행 7일 전부터 앱 공지사항이나 이 페이지를 통해 알립니다. 이용자의 권리에 중요한 변경은 시행 30일 전에 알립니다.</p>
+        <ul>
+          <li>공고일: 2026년 9월 11일</li>
+          <li>시행일: 2026년 9월 11일</li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="index.html">홈</a><a href="privacy.html"><strong>개인정보처리방침</strong></a><a href="terms.html">이용약관</a>
+    <p style="margin-top:10px">© 2026 Software Maestro Good Dyno</p>
+  </div>
+</footer>
+
+</body>
+</html>
