@@ -2,12 +2,144 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>클라임픽 ClimPick — 클라이밍 영상 기록·크루 앱</title>
 <meta name="description" content="클라이밍 기록 앱 클라임픽(ClimPick) — 완등 영상 클립별 기록, 캘린더 잔디, 크루 번개·오늘의 인증·주간 리포트까지. App Store에서 무료 다운로드.">
+<link rel="canonical" href="https://climpick.netlify.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0A0E0A">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- 공유 미리보기 (Open Graph / X) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="클라임픽 ClimPick">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://climpick.netlify.app/">
 <meta property="og:title" content="클라임픽 ClimPick — 클라이밍 기록 앱">
 <meta property="og:description" content="완등은 순간, 기록은 클라임픽. App Store에서 무료로 받아.">
-<title>클라임픽 ClimPick</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0A0E0A">
+<meta property="og:image" content="https://climpick.netlify.app/og-image.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="클라임픽 앱이 켜진 iPhone 세 대 — 운동 기록 화면, ClimPick 로고, 크루 오늘의 인증 화면">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="클라임픽 ClimPick — 클라이밍 기록 앱">
+<meta name="twitter:description" content="완등은 순간, 기록은 클라임픽. App Store에서 무료로 받아.">
+<meta name="twitter:image" content="https://climpick.netlify.app/og-image.jpg">
+
+<!-- 구조화 데이터 — FAQ 문구는 본문 FAQ 섹션과 반드시 똑같이 맞출 것 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://climpick.netlify.app/#organization",
+      "name": "굿다이노팀",
+      "alternateName": ["Good Dyno", "Software Maestro Good Dyno"],
+      "url": "https://climpick.netlify.app/",
+      "logo": "https://climpick.netlify.app/icon-512.png",
+      "email": "gooddynoteam@gmail.com",
+      "sameAs": ["https://github.com/Software-Maestro-Good-Dyno"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://climpick.netlify.app/#website",
+      "url": "https://climpick.netlify.app/",
+      "name": "클라임픽 ClimPick",
+      "alternateName": ["클라임픽", "ClimPick"],
+      "inLanguage": "ko-KR",
+      "publisher": { "@id": "https://climpick.netlify.app/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://climpick.netlify.app/#webpage",
+      "url": "https://climpick.netlify.app/",
+      "name": "클라임픽 ClimPick — 클라이밍 영상 기록·크루 앱",
+      "inLanguage": "ko-KR",
+      "isPartOf": { "@id": "https://climpick.netlify.app/#website" },
+      "about": { "@id": "https://climpick.netlify.app/#app" },
+      "primaryImageOfPage": "https://climpick.netlify.app/og-image.jpg"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://climpick.netlify.app/#app",
+      "name": "클라임픽",
+      "alternateName": "ClimPick",
+      "description": "클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iPhone 앱. 영상 구간 편집과 홀드 색·난이도·시도 횟수 기록, 캘린더와 월간 통계, 암장별 완등 영상 탐색, 크루 번개·오늘의 인증·주간 리포트를 제공합니다.",
+      "applicationCategory": "SportsApplication",
+      "operatingSystem": "iOS 18.0+",
+      "installUrl": "https://apps.apple.com/kr/app/id6789773061",
+      "downloadUrl": "https://apps.apple.com/kr/app/id6789773061",
+      "sameAs": ["https://apps.apple.com/kr/app/id6789773061"],
+      "url": "https://climpick.netlify.app/",
+      "image": "https://climpick.netlify.app/icon-512.png",
+      "screenshot": [
+        "https://climpick.netlify.app/img/hero-feed.webp",
+        "https://climpick.netlify.app/img/upload-clip-edit.webp",
+        "https://climpick.netlify.app/img/profile-calendar.webp",
+        "https://climpick.netlify.app/img/monthly-stats.webp",
+        "https://climpick.netlify.app/img/gym-detail.webp"
+      ],
+      "inLanguage": ["ko", "en"],
+      "datePublished": "2026-07-24",
+      "featureList": [
+        "완등 영상 여러 개 한 번에 업로드와 구간 자르기",
+        "문제별 홀드 색·난이도·시도 횟수·완등 여부 기록",
+        "캘린더 잔디와 월간 통계",
+        "암장별 문제 모아보기와 홀드 색·난이도 필터",
+        "크루 번개·오늘의 인증·크루 채팅·주간 리포트"
+      ],
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+      "author": { "@id": "https://climpick.netlify.app/#organization" },
+      "publisher": { "@id": "https://climpick.netlify.app/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://climpick.netlify.app/#faq",
+      "isPartOf": { "@id": "https://climpick.netlify.app/#webpage" },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "클라임픽은 어떤 앱인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "클라임픽(ClimPick)은 클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iPhone 앱이에요. 영상을 구간별로 잘라 암장·홀드 색·난이도·시도 횟수와 함께 남기고, 캘린더와 월간 통계로 성장을 확인할 수 있어요." }
+        },
+        {
+          "@type": "Question",
+          "name": "클라임픽은 무료인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "네, 클라임픽은 무료로 제공돼요. App Store에서 무료로 내려받을 수 있어요." }
+        },
+        {
+          "@type": "Question",
+          "name": "어떤 기기에서 쓸 수 있고, 가입은 어떻게 하나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "App Store에서 설치해 iOS 18.0 이상의 iPhone에서 사용할 수 있어요. 만 14세 이상이면 Google 계정, Apple 계정, 이메일 중 하나로 가입할 수 있어요." }
+        },
+        {
+          "@type": "Question",
+          "name": "클라이밍 영상은 어떻게 기록하나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "운동 중에 앱에서 바로 촬영하거나, 갤러리에 있는 영상을 한 번에 최대 10개까지 올릴 수 있어요. 필요한 구간만 잘라 문제별 클립으로 저장하고, 홀드 색·난이도·시도 횟수·완등 여부를 함께 기록해요. 영상은 mp4·mov·webm 형식으로 파일당 최대 500MB까지 올릴 수 있어요." }
+        },
+        {
+          "@type": "Question",
+          "name": "크루 기능으로 무엇을 할 수 있나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "번개로 암장과 시간을 정해 함께 오를 크루원을 모으고, 오늘의 인증으로 그날의 등반을 사진으로 남길 수 있어요. 크루 채팅으로 이야기를 나누고, 주간 리포트에서 완등 수·방문 암장·활발한 크루원을 확인해요. 한 사람당 최대 5개 크루에 가입할 수 있어요." }
+        },
+        {
+          "@type": "Question",
+          "name": "내가 올린 영상은 누가 볼 수 있나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "영상이 있는 등반 기록은 공개되어 로그인하지 않은 사람도 볼 수 있어요. 월간·누적 통계는 본인만 볼 수 있고, 크루 인증 사진과 채팅은 해당 크루 멤버만 볼 수 있어요. 자세한 내용은 개인정보처리방침에서 확인할 수 있어요." }
+        },
+        {
+          "@type": "Question",
+          "name": "클라임픽은 누가 만들었나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "굿다이노팀(Software Maestro Good Dyno)이 만들고 운영해요. 서비스 문의는 gooddynoteam@gmail.com으로 보내주세요." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&family=Archivo:ital,wght@0,700;0,800;1,800;1,900&display=swap">
 <style>
@@ -300,8 +432,36 @@
   #qr { width: 124px; height: 124px; }
   #qr img, #qr canvas { width: 124px !important; height: 124px !important; display: block; }
 
+  /* ---------- FAQ (dark) ---------- */
+  .s-faq {
+    position: relative; z-index: 1;
+    margin-top: calc(-1 * var(--slant));
+    padding: calc(clamp(64px, 8vw, 96px) + var(--slant)) 0 clamp(24px, 3vw, 40px);
+  }
+  .s-faq .sec-head p { color: var(--muted-d); }
+  .faq-list { margin-top: clamp(28px, 4vw, 40px); border-top: 1px solid var(--night-line); }
+  .faq-list details { border-bottom: 1px solid var(--night-line); }
+  .faq-list summary {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 20px 4px; cursor: pointer; list-style: none;
+    font-weight: 700; font-size: clamp(16px, 1.6vw, 18px); line-height: 1.45;
+    transition: color .2s;
+  }
+  .faq-list summary::-webkit-details-marker { display: none; }
+  .faq-list summary::after {
+    content: "+"; flex: none; display: grid; place-items: center; width: 30px; height: 30px;
+    border-radius: 9px; border: 1.5px solid var(--night-line); background: var(--night-2);
+    color: var(--lime); font-size: 20px; font-weight: 700; line-height: 1;
+    transition: transform .2s, background .2s, color .2s, border-color .2s;
+  }
+  .faq-list summary:hover { color: var(--lime); }
+  .faq-list details[open] summary::after { transform: rotate(45deg); background: var(--lime); border-color: var(--lime); color: var(--ink); }
+  .faq-list summary:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+  .faq-list .answer { padding: 0 4px 22px; color: var(--muted-d); font-size: clamp(14.5px, 1.3vw, 16px); max-width: 46em; }
+  .faq-list .answer a { color: var(--lime); }
+
   footer {
-    margin-top: calc(-1 * var(--slant)); padding: calc(44px + var(--slant)) 0 52px;
+    padding: 44px 0 52px;
     text-align: center; color: var(--muted-d); font-size: 13px;
   }
   footer .wordmark { display: inline-block; margin-bottom: 6px; font-size: 20px; }
@@ -528,6 +688,48 @@
       <div class="qr-card reveal">
         <div id="qr" aria-label="App Store 다운로드 링크 QR 코드"></div>
         <span>SCAN TO DOWNLOAD</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="s-faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">FAQ</span>
+        <h2 class="display" id="faq-title">자주 묻는 질문</h2>
+        <p>클라임픽에 대해 많이 궁금해하는 내용을 모았어요.</p>
+      </div>
+
+      <div class="faq-list reveal">
+        <details>
+          <summary>클라임픽은 어떤 앱인가요?</summary>
+          <p class="answer">클라임픽(ClimPick)은 클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iPhone 앱이에요. 영상을 구간별로 잘라 암장·홀드 색·난이도·시도 횟수와 함께 남기고, 캘린더와 월간 통계로 성장을 확인할 수 있어요.</p>
+        </details>
+        <details>
+          <summary>클라임픽은 무료인가요?</summary>
+          <p class="answer">네, 클라임픽은 무료로 제공돼요. App Store에서 무료로 내려받을 수 있어요.</p>
+        </details>
+        <details>
+          <summary>어떤 기기에서 쓸 수 있고, 가입은 어떻게 하나요?</summary>
+          <p class="answer">App Store에서 설치해 iOS 18.0 이상의 iPhone에서 사용할 수 있어요. 만 14세 이상이면 Google 계정, Apple 계정, 이메일 중 하나로 가입할 수 있어요.</p>
+        </details>
+        <details>
+          <summary>클라이밍 영상은 어떻게 기록하나요?</summary>
+          <p class="answer">운동 중에 앱에서 바로 촬영하거나, 갤러리에 있는 영상을 한 번에 최대 10개까지 올릴 수 있어요. 필요한 구간만 잘라 문제별 클립으로 저장하고, 홀드 색·난이도·시도 횟수·완등 여부를 함께 기록해요. 영상은 mp4·mov·webm 형식으로 파일당 최대 500MB까지 올릴 수 있어요.</p>
+        </details>
+        <details>
+          <summary>크루 기능으로 무엇을 할 수 있나요?</summary>
+          <p class="answer">번개로 암장과 시간을 정해 함께 오를 크루원을 모으고, 오늘의 인증으로 그날의 등반을 사진으로 남길 수 있어요. 크루 채팅으로 이야기를 나누고, 주간 리포트에서 완등 수·방문 암장·활발한 크루원을 확인해요. 한 사람당 최대 5개 크루에 가입할 수 있어요.</p>
+        </details>
+        <details>
+          <summary>내가 올린 영상은 누가 볼 수 있나요?</summary>
+          <p class="answer">영상이 있는 등반 기록은 공개되어 로그인하지 않은 사람도 볼 수 있어요. 월간·누적 통계는 본인만 볼 수 있고, 크루 인증 사진과 채팅은 해당 크루 멤버만 볼 수 있어요. 자세한 내용은 <a href="privacy.html#p3">개인정보처리방침</a>에서 확인할 수 있어요.</p>
+        </details>
+        <details>
+          <summary>클라임픽은 누가 만들었나요?</summary>
+          <p class="answer">굿다이노팀(Software Maestro Good Dyno)이 만들고 운영해요. 서비스 문의는 <a href="mailto:gooddynoteam@gmail.com">gooddynoteam@gmail.com</a>으로 보내주세요.</p>
+        </details>
       </div>
     </div>
   </section>
