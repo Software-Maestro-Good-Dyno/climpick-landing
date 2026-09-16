@@ -15,6 +15,19 @@
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+<!-- Airbridge Web SDK — Web-to-App 트래킹 (Meta 광고 → 트래킹 링크 → 이 페이지 → App Store) -->
+<script>
+(function(a_,i_,r_,_b,_r,_i,_d,_g,_e){function q(b,a){function d(){var l=x(b,a);y(l)}if(0<_g){var e,f=new (null!=(e=a_.XDomainRequest)?e:a_.XMLHttpRequest);e=function(){};f.open("GET",a);f.timeout=_g;f.onload=d;f.onerror=e;f.onprogress=e;f.ontimeout=e;f.send()}else d()}function y(b){if("complete"===i_.readyState)i_.head.appendChild(b);else{var a=function(){a_.removeEventListener("load",a);i_.head.appendChild(b)};a_.addEventListener("load",a)}}function x(b,a){var d=i_.createElement(r_);d.async=!0;d.src=a;d.onerror=function(){return z(b)};return d}function z(b){b.queue.filter(function(a){return 0<=_d.indexOf(a[0])}).forEach(function(a){a=a[1];a=a[a.length-1];"function"===typeof a&&a("Failed to load Airbridge SDK.")})}function r(b){var a={queue:null!=b?b:[],get isSDKEnabled(){return!1}};_i.concat(_d).forEach(function(d){var e=d.split("."),f=e.pop();e.reduce(function(l,t){var u;return l[t]=null!=(u=l[t])?u:{}},a)[f]=function(){a.queue.push([d,arguments])}});return a}null!=a_.__AIRBRIDGE__||(a_.__AIRBRIDGE__={mocks:[]});"undefined"!==typeof i_.documentMode&&(_r=_r.replace(/^https:/,""));a_.createAirbridge=function(){var b=r(),a;null==(a=a_.__AIRBRIDGE__)||a.mocks.push(b);q(b,_r);return b};a_[_b]||(_e=r(_e),a_[_b]=_e,q(_e,_r))})(window,document,"script","airbridge","https://static.airbridge.io/sdk/latest/airbridge.min.js","init startTracking stopTracking openBanner setBanner setDownload setDownloads openDeeplink setDeeplinks sendWeb setUserAgent setMobileAppData setUserID clearUserID setUserEmail clearUserEmail setUserPhone clearUserPhone setUserAttribute removeUserAttribute clearUserAttributes setUserAlias removeUserAlias clearUserAlias clearUser setUserId setUserAttributes addUserAlias setDeviceAlias removeDeviceAlias clearDeviceAlias setDeviceIFV setDeviceIFA setDeviceGAID events.send events.signIn events.signUp events.signOut events.purchased events.addedToCart events.productDetailsViewEvent events.homeViewEvent events.productListViewEvent events.searchResultViewEvent".split(" "),["events.wait","fetchResource","createTouchpoint","createTrackingLink"],0);
+
+airbridge.init({
+  app: "climpick",
+  // Airbridge 대시보드 → Settings → Tokens → Web SDK Token 값으로 교체할 것
+  webToken: "dd379f21e8c04a01b736860cd63424a6",
+  // UTM 파라미터로 직접 유입된 경우도 캠페인 값으로 매핑
+  utmParsing: true
+});
+</script>
+
 <!-- 공유 미리보기 (Open Graph / X) -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="클라임픽 ClimPick">
@@ -543,7 +556,7 @@
 
 <header class="bar">
   <a class="wordmark" href="#top">ClimPick</a>
-  <a class="bar-cta" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>앱 다운로드</a>
+  <a class="bar-cta" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" data-airbridge-cta="header"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>앱 다운로드</a>
 </header>
 
 <main id="top">
@@ -559,7 +572,7 @@
         </h1>
         <p class="lede">영상을 올리고 문제별로 기록하세요.<br> 난이도부터 성장 기록까지 한눈에.</p>
         <div class="hero-actions">
-          <a class="store-badge" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" aria-label="App Store에서 다운로드"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span class="sb-text"><span class="sb-small">Download on the</span><span class="sb-big">App Store</span></span></a>
+          <a class="store-badge" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" data-airbridge-cta="hero" aria-label="App Store에서 다운로드"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span class="sb-text"><span class="sb-small">Download on the</span><span class="sb-big">App Store</span></span></a>
         </div>
       </div>
 
@@ -681,7 +694,7 @@
         <span class="kicker">Download now</span>
         <h2 class="display">다음 완등부터,<br><span class="tilt">클라임픽에 기록하세요.</span></h2>
         <p>오늘의 클라이밍을 기록하고, 쌓이는 성장을 확인하세요.</p>
-        <a class="store-badge" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" aria-label="App Store에서 다운로드"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span class="sb-text"><span class="sb-small">Download on the</span><span class="sb-big">App Store</span></span></a>
+        <a class="store-badge" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" data-airbridge-cta="bottom" aria-label="App Store에서 다운로드"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span class="sb-text"><span class="sb-small">Download on the</span><span class="sb-big">App Store</span></span></a>
       </div>
       <div class="qr-card reveal">
         <div id="qr" aria-label="App Store 다운로드 링크 QR 코드"></div>
@@ -762,6 +775,34 @@
   } else {
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
+
+  // Airbridge Web-to-App: App Store CTA 클릭 → 앱 설치 시 climpick:// 딥링크, 미설치 시 App Store
+  // 트래킹 링크(광고)로 유입된 attribution은 SDK가 터치포인트로 보관해 앱 설치·앱 이벤트까지 이어짐
+  var APP_STORE_URL = "https://apps.apple.com/kr/app/id6789773061";
+  document.querySelectorAll("[data-airbridge-cta]").forEach(function (cta) {
+    cta.addEventListener("click", function (e) {
+      // SDK 미로드(차단·로드 전)면 기존 App Store 링크 그대로 동작
+      if (!window.airbridge || !window.airbridge.isSDKEnabled) return;
+      e.preventDefault();
+      window.airbridge.openDeeplink({
+        deeplinks: {
+          ios: "climpick://",
+          android: "climpick://",
+          desktop: APP_STORE_URL
+        },
+        fallbacks: {
+          ios: "itunes-appstore",
+          android: APP_STORE_URL
+        },
+        type: "click",
+        ctaParams: {
+          cta_param_1: cta.getAttribute("data-airbridge-cta"),
+          cta_param_2: cta.classList.contains("bar-cta") ? "text_button" : "appstore_badge",
+          cta_param_3: "landing_index"
+        }
+      });
+    });
+  });
 </script>
 
 </body>
