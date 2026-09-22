@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>클라임픽 ClimPick — 클라이밍 영상 기록·크루 앱</title>
-<meta name="description" content="클라이밍 기록 앱 클라임픽(ClimPick) — 완등 영상 클립별 기록, 캘린더 잔디, 크루 번개·오늘의 인증·주간 리포트까지. App Store에서 무료 다운로드.">
+<meta name="description" content="클라이밍 기록 앱 클라임픽(ClimPick) — 완등 영상 클립별 기록, 레이팅·티어 프로필, 30일 리포트 카드, 크루 번개·오늘의 인증·주간 리포트까지. App Store에서 무료 다운로드.">
 <link rel="canonical" href="https://climpick.netlify.app/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="google-site-verification" content="N9Lm2QlG6lyBP1MHX5HsLOS-btigrSENJQ-WXlRYeVg" />
@@ -94,16 +94,17 @@ airbridge.init({
       "screenshot": [
         "https://climpick.netlify.app/img/hero-feed.webp",
         "https://climpick.netlify.app/img/upload-clip-edit.webp",
-        "https://climpick.netlify.app/img/profile-calendar.webp",
-        "https://climpick.netlify.app/img/monthly-stats.webp",
-        "https://climpick.netlify.app/img/gym-detail.webp"
+        "https://climpick.netlify.app/img/profile-tier.webp",
+        "https://climpick.netlify.app/img/monthly-report.webp"
       ],
       "inLanguage": ["ko", "en"],
       "datePublished": "2026-07-24",
       "featureList": [
         "완등 영상 여러 개 한 번에 업로드와 구간 자르기",
         "문제별 홀드 색·난이도·시도 횟수·완등 여부 기록",
+        "완등 레이팅과 티어(브론즈~마스터), 홈짐·하이라이트가 있는 프로필",
         "캘린더 잔디와 월간 통계",
+        "최근 30일 클라이밍 리포트 카드 만들기와 공유",
         "암장별 문제 모아보기와 홀드 색·난이도 필터",
         "크루 번개·오늘의 인증·크루 채팅·주간 리포트"
       ],
@@ -349,6 +350,10 @@ airbridge.init({
   .f-media.duo .phone { width: min(210px, 44%); }
   .feature .f-media.duo .phone:nth-of-type(2) { transform: rotate(-6deg) translateY(22px); z-index: 1; }
   .feature .f-media.duo .phone:nth-of-type(3) { transform: rotate(5deg) translateY(-16px); margin-left: -22px; z-index: 2; }
+  .f-media.tier { display: flex; justify-content: center; align-items: center; gap: 12px; }
+  .feature .f-media.tier .phone { width: min(230px, 50%); transform: rotate(-4deg); z-index: 2; }
+  .tier-ladder { position: relative; z-index: 1; display: grid; gap: 7px; width: min(220px, 44%); transform: rotate(4deg) translateY(10px); }
+  .tier-ladder img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 10px 22px rgba(20,40,18,.22); transform: translateX(calc(var(--i) * -5px)); }
   .slab.y { background: var(--yellow); }
   .slab.g { background: var(--lime); }
   .slab.b { background: var(--blue); }
@@ -522,6 +527,9 @@ airbridge.init({
     .stack { height: min(420px, 112vw); max-width: 330px; }
     .feature { grid-template-columns: 1fr; gap: 8px; padding-top: 44px; }
     .feature .f-media, .feature.flip .f-media { order: 2; }
+    .f-media.tier { gap: 8px; }
+    .tier-ladder { transform: rotate(3deg); }
+    .tier-ladder img { transform: none; }
     .f-media { padding: 20px 0 8px; }
     .f-media .phone { width: min(220px, 58vw); }
     .f-media.duo .phone { width: min(190px, 44vw); }
@@ -619,24 +627,24 @@ airbridge.init({
       </div>
 
       <div class="feature flip reveal">
-        <div class="f-media duo"><div class="slab g"></div><div class="phone"><img src="img/profile-calendar.webp" width="640" height="1391" loading="lazy" decoding="async" alt="프로필 캘린더 화면 — 완등이 많은 날일수록 진해지는 잔디 캘린더"></div><div class="phone"><img src="img/monthly-stats.webp" width="640" height="1391" loading="lazy" decoding="async" alt="월간 기록 화면 — 이번 달 하이라이트, 완등·등반일·방문 암장 통계, 난이도 피라미드"></div></div>
+        <div class="f-media tier"><div class="slab g"></div><div class="phone"><img src="img/profile-tier.webp" width="640" height="1391" loading="lazy" decoding="async" alt="프로필 화면 — 골드 II 티어와 레이팅, 홈짐, 이번 달 하이라이트"></div><div class="tier-ladder" aria-label="티어 목록 — 브론즈부터 마스터까지"><img src="img/tier-master.webp" width="540" height="169" loading="lazy" decoding="async" style="--i:0" alt="마스터 티어 카드"><img src="img/tier-ruby.webp" width="540" height="169" loading="lazy" decoding="async" style="--i:1" alt="루비 II 티어 카드"><img src="img/tier-diamond.webp" width="540" height="169" loading="lazy" decoding="async" style="--i:2" alt="다이아몬드 II 티어 카드"><img src="img/tier-emerald.webp" width="540" height="169" loading="lazy" decoding="async" style="--i:3" alt="에메랄드 II 티어 카드"><img src="img/tier-gold.webp" width="540" height="169" loading="lazy" decoding="async" style="--i:4" alt="골드 II 티어 카드"><img src="img/tier-silver.webp" width="540" height="169" loading="lazy" decoding="async" style="--i:5" alt="실버 III 티어 카드"><img src="img/tier-bronze.webp" width="540" height="169" loading="lazy" decoding="async" style="--i:6" alt="브론즈 I 티어 카드"></div></div>
         <div>
           <span class="f-num sport">02</span>
-          <span class="f-tag">Stats</span>
-          <h3>쌓인 기록이<br>성장을 보여줘요.</h3>
-          <p class="wide">클라이밍한 날과 완등 기록을 캘린더로 확인하고,<br> 월간 통계와 미션으로 나의 변화를 확인하세요.</p>
-          <div class="pills"><span>캘린더 잔디</span><span>월간 통계</span><span>미션</span></div>
+          <span class="f-tag">Tier</span>
+          <h3>오를수록<br>올라가는 티어.</h3>
+          <p class="wide">완등 기록이 레이팅이 되고, 레이팅이 티어를 올려요.<br> 브론즈부터 마스터까지, 티어와 홈짐·이번 달 하이라이트를 프로필 한 화면에서 보여주세요.</p>
+          <div class="pills"><span>티어·레이팅</span><span>홈짐</span><span>이번 달 하이라이트</span></div>
         </div>
       </div>
 
       <div class="feature reveal">
-        <div class="f-media"><div class="slab b"></div><div class="phone"><img src="img/gym-detail.webp" width="640" height="1391" loading="lazy" decoding="async" alt="암장 상세 화면 — 홀드 색 필터로 모아보는 완등 영상들"></div></div>
+        <div class="f-media"><div class="slab b"></div><div class="phone"><img src="img/monthly-report.webp" width="640" height="1391" loading="lazy" decoding="async" alt="클라이밍 리포트 화면 — 최근 30일의 티어·레이팅, 업로드 영상, 최고 난이도, 클라이밍한 날, 등급 분포, 방문 암장을 카드 한 장에"></div></div>
         <div>
           <span class="f-num sport">03</span>
-          <span class="f-tag">Gym</span>
-          <h3>이 암장 문제,<br>여기 다 있음.</h3>
-          <p class="wide">자주 가는 암장의 문제를 모아보고,<br> 홀드 색·난이도별로 다른 클라이머의 완등 영상을 확인하세요.</p>
-          <div class="pills"><span>암장별 문제 탐색</span><span>홀드 색 필터</span><span>난이도 필터</span></div>
+          <span class="f-tag">Report</span>
+          <h3>30일의 성장을<br>카드 한 장에.</h3>
+          <p class="wide">최근 30일의 티어·레이팅, 최고 난이도, 클라이밍한 날, 등급 분포와 방문 암장을 리포트 카드로 모아요.<br> 배경을 내 완등 영상으로 바꾸고 그대로 공유하세요.</p>
+          <div class="pills"><span>최근 30일 리포트</span><span>등급 분포</span><span>배경 바꾸기</span><span>공유하기</span></div>
         </div>
       </div>
     </div>
