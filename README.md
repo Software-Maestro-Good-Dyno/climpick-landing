@@ -4,6 +4,7 @@
 
 - 사이트: https://climpick.netlify.app
 - App Store: https://apps.apple.com/kr/app/id6789773061
+- Google Play: https://play.google.com/store/apps/details?id=com.climpick
 
 ## 파일
 
@@ -12,12 +13,13 @@
 | `index.html` | `/` | 랜딩 페이지 |
 | `privacy.html` | `/privacy` | 개인정보처리방침 |
 | `terms.html` | `/terms` | 이용약관 |
+| `download.html` | `/download` | QR·공유용 링크. 기기에 맞는 스토어로 리디렉트 (Android → Google Play, iOS → App Store, 그 외 → 랜딩) |
 
 빌드 과정이 없는 정적 HTML입니다. 스크린샷 이미지는 `index.html` 안에 base64로 들어 있어서 파일 하나로 동작합니다. 브라우저로 파일을 바로 열어 확인할 수 있습니다.
 
 ## 배포
 
-Netlify에 호스팅합니다(`gooddynolimbing@gmail.com` 계정 소유). 지금은 GitHub와 연동돼 있지 않아서, push와 별개로 직접 배포해야 합니다.
+Netlify에 호스팅합니다(`gooddynolimbing@gmail.com` 계정 소유). GitHub `main` 브랜치와 연동돼 있어서 PR을 `main`에 머지하면 자동으로 배포됩니다. 수동 배포가 필요할 때만 아래 명령을 씁니다.
 
 ```bash
 npx netlify-cli status   # gooddynolimbing 계정으로 로그인됐는지 확인

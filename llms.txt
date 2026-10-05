@@ -1,17 +1,17 @@
 # 클라임픽 (ClimPick)
 
-> 클라임픽은 클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 무료 iPhone 앱입니다. 굿다이노팀(Software Maestro Good Dyno)이 만들고 운영합니다.
+> 클라임픽은 클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 무료 iOS·Android 앱입니다. 굿다이노팀(Software Maestro Good Dyno)이 만들고 운영합니다.
 
 - 앱 이름: 클라임픽 (영문 ClimPick)
 - 분류: 스포츠 — 클라이밍 영상 기록·공유 앱
-- 플랫폼: iPhone, iOS 18.0 이상 (App Store)
+- 플랫폼: iPhone (iOS 18.0 이상, App Store), Android (Google Play)
 - 가격: 무료
 - 지원 언어: 한국어, 영어
-- App Store 출시일: 2026년 7월 24일
+- App Store 출시일: 2026년 7월 24일 / Google Play 출시: 2026년 10월
 - 가입: 만 14세 이상, Google 계정·Apple 계정·이메일
 - 운영: 굿다이노팀 (문의 gooddynoteam@gmail.com)
 
-ClimPick (Korean: 클라임픽) is a free iPhone app (iOS 18.0 or later) for recording climbing sends as video clips per problem with gym, hold color, grade and attempt count. It tracks progress with a calendar heatmap and monthly stats, lets climbers browse other climbers' send videos by gym, hold color and grade, and supports crews with meetups, daily check-in photos, crew chat and weekly crew reports. It is made by the Good Dyno team.
+ClimPick (Korean: 클라임픽) is a free iOS (18.0 or later) and Android app for recording climbing sends as video clips per problem with gym, hold color, grade and attempt count. It tracks progress with a calendar heatmap and monthly stats, lets climbers browse other climbers' send videos by gym, hold color and grade, and supports crews with meetups, daily check-in photos, crew chat and weekly crew reports. It is made by the Good Dyno team.
 
 ## 주요 기능
 
@@ -25,6 +25,7 @@ ClimPick (Korean: 클라임픽) is a free iPhone app (iOS 18.0 or later) for rec
 ## 링크
 
 - [App Store — 클라임픽](https://apps.apple.com/kr/app/id6789773061): iPhone 앱 다운로드
+- [Google Play — 클라임픽](https://play.google.com/store/apps/details?id=com.climpick): Android 앱 다운로드
 - [클라임픽 소개](https://climpick.netlify.app/): 기능 소개와 자주 묻는 질문
 - [개인정보처리방침](https://climpick.netlify.app/privacy): 수집 항목, 다른 이용자에게 공개되는 정보, 보유 기간, 처리위탁과 국외이전
 - [이용약관](https://climpick.netlify.app/terms): 서비스 내용, 게시물의 권리와 공개 범위, 크루 규칙, 금지 행위
