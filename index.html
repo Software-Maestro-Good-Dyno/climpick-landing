@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>클라임픽 ClimPick — 클라이밍 영상 기록·크루 앱</title>
-<meta name="description" content="클라이밍 기록 앱 클라임픽(ClimPick) — 완등 영상 클립별 기록, 레이팅·티어 프로필, 30일 리포트 카드, 크루 번개·오늘의 인증·주간 리포트까지. App Store에서 무료 다운로드.">
+<meta name="description" content="클라이밍 기록 앱 클라임픽(ClimPick) — 완등 영상 클립별 기록, 레이팅·티어 프로필, 30일 리포트 카드, 크루 번개·오늘의 인증·주간 리포트까지. App Store·Google Play에서 무료 다운로드.">
 <link rel="canonical" href="https://climpick.netlify.app/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="google-site-verification" content="N9Lm2QlG6lyBP1MHX5HsLOS-btigrSENJQ-WXlRYeVg" />
@@ -14,6 +14,7 @@
 <link rel="icon" href="favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script>/* Android 기기면 상단 버튼을 Google Play용으로 그리기 위한 플래그 (첫 렌더 전 실행) */if(/android/i.test(navigator.userAgent)){document.documentElement.classList.add("is-android");}</script>
 
 <!-- Airbridge Web SDK — Web-to-App 트래킹 (Meta 광고 → 트래킹 링크 → 이 페이지 → App Store) -->
 <script>
@@ -34,14 +35,14 @@ airbridge.init({
 <meta property="og:locale" content="ko_KR">
 <meta property="og:url" content="https://climpick.netlify.app/">
 <meta property="og:title" content="클라임픽 ClimPick — 클라이밍 기록 앱">
-<meta property="og:description" content="완등은 순간, 기록은 클라임픽. App Store에서 무료로 받아.">
+<meta property="og:description" content="완등은 순간, 기록은 클라임픽. App Store·Google Play에서 무료로 받아.">
 <meta property="og:image" content="https://climpick.netlify.app/og-image.jpg">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="500">
 <meta property="og:image:alt" content="클라임픽 앱이 켜진 iPhone 세 대 — 운동 기록 화면, ClimPick 로고, 크루 오늘의 인증 화면">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="클라임픽 ClimPick — 클라이밍 기록 앱">
-<meta name="twitter:description" content="완등은 순간, 기록은 클라임픽. App Store에서 무료로 받아.">
+<meta name="twitter:description" content="완등은 순간, 기록은 클라임픽. App Store·Google Play에서 무료로 받아.">
 <meta name="twitter:image" content="https://climpick.netlify.app/og-image.jpg">
 
 <!-- 구조화 데이터 — FAQ 문구는 본문 FAQ 섹션과 반드시 똑같이 맞출 것 -->
@@ -83,12 +84,12 @@ airbridge.init({
       "@id": "https://climpick.netlify.app/#app",
       "name": "클라임픽",
       "alternateName": "ClimPick",
-      "description": "클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iPhone 앱. 영상 구간 편집과 홀드 색·난이도·시도 횟수 기록, 캘린더와 월간 통계, 암장별 완등 영상 탐색, 크루 번개·오늘의 인증·주간 리포트를 제공합니다.",
+      "description": "클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iOS·Android 앱. 영상 구간 편집과 홀드 색·난이도·시도 횟수 기록, 캘린더와 월간 통계, 암장별 완등 영상 탐색, 크루 번개·오늘의 인증·주간 리포트를 제공합니다.",
       "applicationCategory": "SportsApplication",
-      "operatingSystem": "iOS 18.0+",
-      "installUrl": "https://apps.apple.com/kr/app/id6789773061",
-      "downloadUrl": "https://apps.apple.com/kr/app/id6789773061",
-      "sameAs": ["https://apps.apple.com/kr/app/id6789773061"],
+      "operatingSystem": ["iOS 18.0+", "Android"],
+      "installUrl": ["https://apps.apple.com/kr/app/id6789773061", "https://play.google.com/store/apps/details?id=com.climpick"],
+      "downloadUrl": ["https://apps.apple.com/kr/app/id6789773061", "https://play.google.com/store/apps/details?id=com.climpick"],
+      "sameAs": ["https://apps.apple.com/kr/app/id6789773061", "https://play.google.com/store/apps/details?id=com.climpick"],
       "url": "https://climpick.netlify.app/",
       "image": "https://climpick.netlify.app/icon-512.png",
       "screenshot": [
@@ -120,12 +121,12 @@ airbridge.init({
         {
           "@type": "Question",
           "name": "클라임픽은 어떤 앱인가요?",
-          "acceptedAnswer": { "@type": "Answer", "text": "클라임픽(ClimPick)은 클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iPhone 앱이에요. 영상을 구간별로 잘라 암장·홀드 색·난이도·시도 횟수와 함께 남기고, 캘린더와 월간 통계로 성장을 확인할 수 있어요." }
+          "acceptedAnswer": { "@type": "Answer", "text": "클라임픽(ClimPick)은 클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iOS·Android 앱이에요. 영상을 구간별로 잘라 암장·홀드 색·난이도·시도 횟수와 함께 남기고, 캘린더와 월간 통계로 성장을 확인할 수 있어요." }
         },
         {
           "@type": "Question",
           "name": "클라임픽은 무료인가요?",
-          "acceptedAnswer": { "@type": "Answer", "text": "네, 클라임픽은 무료로 제공돼요. App Store에서 무료로 내려받을 수 있어요." }
+          "acceptedAnswer": { "@type": "Answer", "text": "네, 클라임픽은 무료로 제공돼요. App Store와 Google Play에서 무료로 내려받을 수 있어요." }
         },
         {
           "@type": "Question",
@@ -231,9 +232,12 @@ airbridge.init({
     transition: border-color .2s, color .2s, background .2s;
   }
   .bar-cta:hover, .bar-cta:focus-visible { background: var(--lime); border-color: var(--lime); color: var(--ink); }
-  .bar-cta .apple { width: 14px; height: 14px; margin-top: -2px; }
+  .bar-cta .apple, .bar-cta .play { width: 14px; height: 14px; margin-top: -2px; }
+  .bar-cta .play { display: none; }
+  html.is-android .bar-cta .apple { display: none; }
+  html.is-android .bar-cta .play { display: block; }
 
-  /* ---------- App Store badge ---------- */
+  /* ---------- App Store / Google Play badge ---------- */
   .store-badge {
     display: inline-flex; align-items: center; gap: 10px;
     background: #000; color: #FFF; text-decoration: none;
@@ -244,6 +248,7 @@ airbridge.init({
   }
   .store-badge:hover, .store-badge:focus-visible { transform: translateY(-3px) rotate(-1.5deg); box-shadow: 0 16px 34px rgba(0,0,0,.4); }
   .store-badge .apple { width: 30px; height: 30px; margin-top: -3px; flex: none; }
+  .store-badge .play { width: 28px; height: 28px; flex: none; }
   .sb-text { display: flex; flex-direction: column; line-height: 1; text-align: left; }
   .sb-small { font-size: 12px; font-weight: 500; letter-spacing: .01em; }
   .sb-big { font-size: 25px; font-weight: 600; letter-spacing: -.02em; margin-top: 3px; }
@@ -271,7 +276,7 @@ airbridge.init({
   .hero h1 .line + .line { margin-top: .08em; }
   .hero h1 .line.tilt { transform: skewX(-6deg); transform-origin: left bottom; }
   .hero .lede { margin-top: 20px; font-size: clamp(15px, 1.4vw, 17px); color: var(--muted-d); max-width: 27em; }
-  .hero-actions { margin-top: 28px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .hero-actions, .cta-actions { margin-top: 28px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 
   .stack { position: relative; height: 520px; max-width: 400px; width: 100%; margin-left: auto; }
   .phone {
@@ -439,7 +444,8 @@ airbridge.init({
   .s-cta h2 { font-size: clamp(28px, 4.2vw, 52px); margin-top: 14px; }
   .s-cta h2 .tilt { display: inline-block; transform: skewX(-6deg); }
   .s-cta p { margin-top: 14px; font-size: clamp(15px, 1.4vw, 17px); font-weight: 500; max-width: 28em; }
-  .s-cta .store-badge { margin-top: 26px; border-color: #000; }
+  .s-cta .cta-actions { margin-top: 26px; }
+  .s-cta .store-badge { border-color: #000; }
   .qr-card {
     background: #FFF; border-radius: 20px; padding: 16px; transform: rotate(4deg);
     display: grid; justify-items: center; gap: 8px; box-shadow: 0 20px 44px rgba(14,40,14,.28);
@@ -564,7 +570,7 @@ airbridge.init({
 
 <header class="bar">
   <a class="wordmark" href="#top">ClimPick</a>
-  <a class="bar-cta" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" data-airbridge-cta="header"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>앱 다운로드</a>
+  <a class="bar-cta" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" data-airbridge-cta="header" data-store="appstore"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#32A0FF" d="M3 2.4 13.5 12 3 21.6z"/><path fill="#00E674" d="M3 2.4 17.2 9.9 13.5 12z"/><path fill="#FF3A44" d="M3 21.6 13.5 12l3.7 2.1z"/><path fill="#FFD500" d="M13.5 12 17.2 9.9 21 12l-3.8 2.1z"/></svg>앱 다운로드</a>
 </header>
 
 <main id="top">
@@ -580,7 +586,8 @@ airbridge.init({
         </h1>
         <p class="lede">영상을 올리고 문제별로 기록하세요.<br> 난이도부터 성장 기록까지 한눈에.</p>
         <div class="hero-actions">
-          <a class="store-badge" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" data-airbridge-cta="hero" aria-label="App Store에서 다운로드"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span class="sb-text"><span class="sb-small">Download on the</span><span class="sb-big">App Store</span></span></a>
+          <a class="store-badge" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" data-airbridge-cta="hero" data-store="appstore" aria-label="App Store에서 다운로드"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span class="sb-text"><span class="sb-small">Download on the</span><span class="sb-big">App Store</span></span></a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.climpick" target="_blank" rel="noopener" data-airbridge-cta="hero" data-store="googleplay" aria-label="Google Play에서 다운로드"><svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#32A0FF" d="M3 2.4 13.5 12 3 21.6z"/><path fill="#00E674" d="M3 2.4 17.2 9.9 13.5 12z"/><path fill="#FF3A44" d="M3 21.6 13.5 12l3.7 2.1z"/><path fill="#FFD500" d="M13.5 12 17.2 9.9 21 12l-3.8 2.1z"/></svg><span class="sb-text"><span class="sb-small">GET IT ON</span><span class="sb-big">Google Play</span></span></a>
         </div>
       </div>
 
@@ -702,10 +709,13 @@ airbridge.init({
         <span class="kicker">Download now</span>
         <h2 class="display">다음 완등부터,<br><span class="tilt">클라임픽에 기록하세요.</span></h2>
         <p>오늘의 클라이밍을 기록하고, 쌓이는 성장을 확인하세요.</p>
-        <a class="store-badge" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" data-airbridge-cta="bottom" aria-label="App Store에서 다운로드"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span class="sb-text"><span class="sb-small">Download on the</span><span class="sb-big">App Store</span></span></a>
+        <div class="cta-actions">
+        <a class="store-badge" href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener" data-airbridge-cta="bottom" data-store="appstore" aria-label="App Store에서 다운로드"><svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span class="sb-text"><span class="sb-small">Download on the</span><span class="sb-big">App Store</span></span></a>
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.climpick" target="_blank" rel="noopener" data-airbridge-cta="bottom" data-store="googleplay" aria-label="Google Play에서 다운로드"><svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path fill="#32A0FF" d="M3 2.4 13.5 12 3 21.6z"/><path fill="#00E674" d="M3 2.4 17.2 9.9 13.5 12z"/><path fill="#FF3A44" d="M3 21.6 13.5 12l3.7 2.1z"/><path fill="#FFD500" d="M13.5 12 17.2 9.9 21 12l-3.8 2.1z"/></svg><span class="sb-text"><span class="sb-small">GET IT ON</span><span class="sb-big">Google Play</span></span></a>
+        </div>
       </div>
       <div class="qr-card reveal">
-        <div id="qr" aria-label="App Store 다운로드 링크 QR 코드"></div>
+        <div id="qr" aria-label="앱 다운로드 링크 QR 코드 (App Store·Google Play 자동 연결)"></div>
         <span>SCAN TO DOWNLOAD</span>
       </div>
     </div>
@@ -723,11 +733,11 @@ airbridge.init({
       <div class="faq-list reveal">
         <details>
           <summary>클라임픽은 어떤 앱인가요?</summary>
-          <p class="answer">클라임픽(ClimPick)은 클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iPhone 앱이에요. 영상을 구간별로 잘라 암장·홀드 색·난이도·시도 횟수와 함께 남기고, 캘린더와 월간 통계로 성장을 확인할 수 있어요.</p>
+          <p class="answer">클라임픽(ClimPick)은 클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iOS·Android 앱이에요. 영상을 구간별로 잘라 암장·홀드 색·난이도·시도 횟수와 함께 남기고, 캘린더와 월간 통계로 성장을 확인할 수 있어요.</p>
         </details>
         <details>
           <summary>클라임픽은 무료인가요?</summary>
-          <p class="answer">네, 클라임픽은 무료로 제공돼요. App Store에서 무료로 내려받을 수 있어요.</p>
+          <p class="answer">네, 클라임픽은 무료로 제공돼요. App Store와 Google Play에서 무료로 내려받을 수 있어요.</p>
         </details>
         <details>
           <summary>클라이밍 영상은 어떻게 기록하나요?</summary>
@@ -766,7 +776,7 @@ airbridge.init({
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
   new QRCode(document.getElementById("qr"), {
-    text: "https://apps.apple.com/kr/app/id6789773061",
+    text: "https://climpick.netlify.app/download",
     width: 148, height: 148,
     colorDark: "#0E120E", colorLight: "#FFFFFF",
     correctLevel: QRCode.CorrectLevel.M
@@ -790,39 +800,51 @@ airbridge.init({
     window.airbridge.events.send(category, props || {});
   }
 
-  // Airbridge Web-to-App: App Store CTA 클릭 → 앱 설치 시 climpick:// 딥링크, 미설치 시 App Store
+  // Airbridge Web-to-App: 스토어 CTA 클릭 → 앱 설치 시 climpick:// 딥링크, 미설치 시 App Store / Google Play
   // 트래킹 링크(광고)로 유입된 attribution은 SDK가 터치포인트로 보관해 앱 설치·앱 이벤트까지 이어짐
   var APP_STORE_URL = "https://apps.apple.com/kr/app/id6789773061";
+  var PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.climpick";
+  // 버튼 종류 라벨: 상단 텍스트 버튼 / App Store 배지 / Google Play 배지
+  function ctaButtonType(cta) {
+    if (cta.classList.contains("bar-cta")) return "text_button";
+    return cta.getAttribute("data-store") === "googleplay" ? "googleplay_badge" : "appstore_badge";
+  }
+  // Android 기기면 상단 "앱 다운로드" 버튼을 Google Play로 연결
+  if (document.documentElement.classList.contains("is-android")) {
+    document.querySelectorAll(".bar-cta[data-store]").forEach(function (a) {
+      a.href = PLAY_STORE_URL; a.setAttribute("data-store", "googleplay");
+    });
+  }
   document.querySelectorAll("[data-airbridge-cta]").forEach(function (cta) {
     cta.addEventListener("click", function (e) {
       // 랜딩 행동 분석용 커스텀 이벤트. 로더가 큐에 담아 두므로 SDK 로드 전 클릭도 유실되지 않음
       // openDeeplink(attribution)와는 별개이며 아래 동작에 영향 없음
       sendLandingEvent("landing_cta_click", {
         action: cta.getAttribute("data-airbridge-cta"),
-        label: cta.classList.contains("bar-cta") ? "text_button" : "appstore_badge",
+        label: ctaButtonType(cta),
         customAttributes: {
           cta_position: cta.getAttribute("data-airbridge-cta"),
-          button_type: cta.classList.contains("bar-cta") ? "text_button" : "appstore_badge",
+          button_type: ctaButtonType(cta),
           page: "landing_index"
         }
       });
-      // SDK 미로드(차단·로드 전)면 기존 App Store 링크 그대로 동작
+      // SDK 미로드(차단·로드 전)면 기존 스토어 링크 그대로 동작
       if (!window.airbridge || !window.airbridge.isSDKEnabled) return;
       e.preventDefault();
       window.airbridge.openDeeplink({
         deeplinks: {
           ios: "climpick://",
           android: "climpick://",
-          desktop: APP_STORE_URL
+          desktop: cta.href
         },
         fallbacks: {
           ios: "itunes-appstore",
-          android: APP_STORE_URL
+          android: "google-play"
         },
         type: "click",
         ctaParams: {
           cta_param_1: cta.getAttribute("data-airbridge-cta"),
-          cta_param_2: cta.classList.contains("bar-cta") ? "text_button" : "appstore_badge",
+          cta_param_2: ctaButtonType(cta),
           cta_param_3: "landing_index"
         }
       });
