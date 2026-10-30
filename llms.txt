@@ -8,7 +8,7 @@
 - 가격: 무료
 - 지원 언어: 한국어, 영어
 - App Store 출시일: 2026년 7월 24일 / Google Play 출시: 2026년 10월
-- 가입: 만 14세 이상, Google 계정·Apple 계정·카카오 계정·네이버 계정(Android)·이메일
+- 가입: 만 14세 이상, Google 계정·Apple 계정(iOS)·카카오 계정·네이버 계정(Android)·이메일
 - 운영: 굿다이노팀 (문의 gooddynoteam@gmail.com)
 
 ClimPick (Korean: 클라임픽) is a free iOS (18.0 or later) and Android app for recording climbing sends as video clips per problem with gym, hold color, grade and attempt count. It tracks progress with a calendar heatmap and monthly stats, lets climbers browse other climbers' send videos by gym, hold color and grade, and supports crews with meetups, daily check-in photos, crew chat and weekly crew reports. It is made by the Good Dyno team.
@@ -17,7 +17,7 @@ ClimPick (Korean: 클라임픽) is a free iOS (18.0 or later) and Android app fo
 
 - 등반 기록: 운동 중 앱에서 바로 촬영하거나 갤러리 영상을 한 번에 최대 10개까지 올리고, 필요한 구간만 잘라 문제별 클립으로 저장합니다. 암장·섹터·난이도·홀드 색·시도 횟수·완등 여부를 함께 기록합니다. 잠금화면에서도 진행 중인 운동을 확인할 수 있습니다.
 - 기록과 통계: 클라이밍한 날을 보여주는 캘린더 잔디, 월간 통계(완등 수, 등반일, 방문 암장, 난이도 피라미드), Personal Best와 방문 지도, 미션, 레이팅과 티어, 리더보드와 암장별 보드를 제공합니다.
-- AI 등반 분석: 자신의 완등 영상에 요청하면 자세를 분석해 능력치와 측정 지표를 보여 줍니다.
+- AI 등반 분석: 자신의 등반 영상에 요청하면 자세를 분석해 능력치와 측정 지표를 보여 줍니다.
 - 암장별 탐색: 암장별로 문제를 모아보고, 홀드 색·난이도 필터로 다른 클라이머의 완등 영상을 찾아볼 수 있습니다. 전국 암장의 위치·영업시간·시설·난이도 체계 정보를 제공합니다.
 - 커뮤니티: 피드, 좋아요, 댓글, 북마크, 팔로우, 차단·신고, 기록 공유 링크, 암장·회원 통합 검색, 알림함을 지원합니다.
 - 크루: 크루를 만들거나 가입하고(한 사람당 최대 5개, 정원 2~100명), 번개 모임, 오늘의 인증 사진, 크루 채팅, 주간 크루 리포트를 이용할 수 있습니다.
