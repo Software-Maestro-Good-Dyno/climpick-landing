@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>클라임픽 ClimPick — 클라이밍 영상 기록·크루 앱</title>
-<meta name="description" content="클라이밍 기록 앱 클라임픽(ClimPick) — 완등 영상 클립별 기록, 레이팅·티어 프로필, 30일 리포트 카드, 크루 번개·오늘의 인증·주간 리포트까지. App Store·Google Play에서 무료 다운로드.">
+<title>클라임픽 ClimPick — 클라이밍 영상 기록·랭킹 앱</title>
+<meta name="description" content="클라이밍 기록 앱 클라임픽(ClimPick) — 완등 영상 클립별 기록, 레이팅·티어 프로필, 30일 리포트 카드, 리더보드와 기록 성장 비교까지. App Store·Google Play에서 무료 다운로드.">
 <link rel="canonical" href="https://climpick.netlify.app/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="google-site-verification" content="N9Lm2QlG6lyBP1MHX5HsLOS-btigrSENJQ-WXlRYeVg" />
@@ -73,7 +73,7 @@ airbridge.init({
       "@type": "WebPage",
       "@id": "https://climpick.netlify.app/#webpage",
       "url": "https://climpick.netlify.app/",
-      "name": "클라임픽 ClimPick — 클라이밍 영상 기록·크루 앱",
+      "name": "클라임픽 ClimPick — 클라이밍 영상 기록·랭킹 앱",
       "inLanguage": "ko-KR",
       "isPartOf": { "@id": "https://climpick.netlify.app/#website" },
       "about": { "@id": "https://climpick.netlify.app/#app" },
@@ -84,7 +84,7 @@ airbridge.init({
       "@id": "https://climpick.netlify.app/#app",
       "name": "클라임픽",
       "alternateName": "ClimPick",
-      "description": "클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iOS·Android 앱. 영상 구간 편집과 홀드 색·난이도·시도 횟수 기록, 캘린더와 월간 통계, 암장별 완등 영상 탐색, 크루 번개·오늘의 인증·주간 리포트를 제공합니다.",
+      "description": "클라이밍 완등 영상을 문제별로 기록하고 레이팅·티어로 실력을 확인하는 iOS·Android 앱. 영상 구간 편집과 홀드 색·난이도·시도 횟수 기록, 캘린더와 월간 통계, 암장별 완등 영상 탐색, 티어 레이팅 리더보드와 기록 성장 비교를 제공합니다.",
       "applicationCategory": "SportsApplication",
       "operatingSystem": ["iOS 18.0+", "Android"],
       "installUrl": ["https://apps.apple.com/kr/app/id6789773061", "https://play.google.com/store/apps/details?id=com.climpick"],
@@ -107,7 +107,8 @@ airbridge.init({
         "캘린더 잔디와 월간 통계",
         "최근 30일 클라이밍 리포트 카드 만들기와 공유",
         "암장별 문제 모아보기와 홀드 색·난이도 필터",
-        "크루 번개·오늘의 인증·크루 채팅·주간 리포트"
+        "티어 레이팅 리더보드",
+        "기록 요약·난이도 피라미드·난이도별 완등 추이로 성장 비교"
       ],
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
       "author": { "@id": "https://climpick.netlify.app/#organization" },
@@ -121,7 +122,7 @@ airbridge.init({
         {
           "@type": "Question",
           "name": "클라임픽은 어떤 앱인가요?",
-          "acceptedAnswer": { "@type": "Answer", "text": "클라임픽(ClimPick)은 클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iOS·Android 앱이에요. 영상을 구간별로 잘라 암장·홀드 색·난이도·시도 횟수와 함께 남기고, 캘린더와 월간 통계로 성장을 확인할 수 있어요." }
+          "acceptedAnswer": { "@type": "Answer", "text": "클라임픽(ClimPick)은 클라이밍 완등 영상을 문제별로 기록하고 레이팅·티어로 실력을 확인하는 iOS·Android 앱이에요. 영상을 구간별로 잘라 암장·홀드 색·난이도·시도 횟수와 함께 남기고, 캘린더와 월간 통계로 성장을 확인할 수 있어요." }
         },
         {
           "@type": "Question",
@@ -132,11 +133,6 @@ airbridge.init({
           "@type": "Question",
           "name": "클라이밍 영상은 어떻게 기록하나요?",
           "acceptedAnswer": { "@type": "Answer", "text": "운동 중에 앱에서 바로 촬영하거나, 갤러리에 있는 영상을 한 번에 최대 10개까지 올릴 수 있어요. 필요한 구간만 잘라 문제별 클립으로 저장하고, 홀드 색·난이도·시도 횟수·완등 여부를 함께 기록해요. 영상은 mp4·mov·webm 형식으로 파일당 최대 500MB까지 올릴 수 있어요." }
-        },
-        {
-          "@type": "Question",
-          "name": "크루 기능으로 무엇을 할 수 있나요?",
-          "acceptedAnswer": { "@type": "Answer", "text": "번개로 암장과 시간을 정해 함께 오를 크루원을 모으고, 오늘의 인증으로 그날의 등반을 사진으로 남길 수 있어요. 크루 채팅으로 이야기를 나누고, 주간 리포트에서 완등 수·방문 암장·활발한 크루원을 확인해요. 한 사람당 최대 5개 크루에 가입할 수 있어요." }
         },
         {
           "@type": "Question",
@@ -378,8 +374,8 @@ airbridge.init({
   .pills { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 7px; }
   .pills span { border: 1.5px solid var(--ink); border-radius: 999px; padding: 4px 12px; font-size: 13px; font-weight: 700; }
 
-  /* ---------- crew (dark) ---------- */
-  .s-crew {
+  /* ---------- rank & growth (dark) ---------- */
+  .s-rank {
     position: relative; z-index: 1; overflow: hidden;
     margin-top: calc(-1 * var(--slant));
     padding: calc(clamp(72px, 9vw, 104px) + var(--slant)) 0 calc(clamp(72px, 9vw, 104px) + var(--slant));
@@ -387,14 +383,14 @@ airbridge.init({
       repeating-linear-gradient(-65deg, rgba(255,255,255,.025) 0 2px, transparent 2px 40px),
       var(--night);
   }
-  .s-crew .sec-head p { color: var(--muted-d); }
-  .s-crew .sec-head h2 { line-height: 1.2; }
-  .crew-bgword {
+  .s-rank .sec-head p { color: var(--muted-d); }
+  .s-rank .sec-head h2 { line-height: 1.2; }
+  .rank-bgword {
     position: absolute; right: -3vw; top: calc(48px + var(--slant)); pointer-events: none;
     font-size: clamp(90px, 16vw, 220px); line-height: .8; color: transparent;
     -webkit-text-stroke: 2px rgba(255,255,255,.07);
   }
-  .crew-grid {
+  .rank-grid {
     position: relative; margin-top: clamp(36px, 5vw, 52px);
     display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 2vw, 20px); align-items: start;
   }
@@ -412,6 +408,8 @@ airbridge.init({
   .ccard::before { content: ""; position: absolute; left: 0; top: 0; right: 0; height: 5px; background: var(--accent); }
   .cmedia { position: relative; aspect-ratio: 4 / 5; border-radius: 16px; overflow: hidden; background: #F4F4F4; }
   .cmedia > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .cmedia.fit { display: grid; place-items: center; background: #F2F2F2; }
+  .cmedia.fit > img { height: auto; object-fit: contain; }
   .cmedia .overlay {
     position: absolute; right: -6%; bottom: -12%; width: 74%; height: auto;
     border-radius: 14px; transform: rotate(-5deg);
@@ -497,8 +495,8 @@ airbridge.init({
   /* ---------- motion ---------- */
   .reveal { opacity: 0; transform: translateY(32px) skewY(2deg); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
   .reveal.in { opacity: 1; transform: none; }
-  .crew-grid .reveal:nth-child(2) { transition-delay: .1s; }
-  .crew-grid .reveal:nth-child(3) { transition-delay: .2s; }
+  .rank-grid .reveal:nth-child(2) { transition-delay: .1s; }
+  .rank-grid .reveal:nth-child(3) { transition-delay: .2s; }
   .hero .reveal.in h1 .line { animation: slam .8s cubic-bezier(.2,.9,.25,1.2) both; }
   .hero .reveal.in h1 .line + .line { animation-delay: .12s; }
   @keyframes slam { from { opacity: 0; transform: translateX(-60px) skewX(-18deg); } }
@@ -514,7 +512,7 @@ airbridge.init({
 
   a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
 
-  /* 태블릿: 2단 유지, 크루 카드 계단 해제 */
+  /* 태블릿: 2단 유지, 랭크 카드 계단 해제 */
   @media (max-width: 1024px) {
     .ccard:nth-child(2), .ccard:nth-child(3) { margin-top: 0; }
     .float-chip { font-size: 13px; }
@@ -542,13 +540,13 @@ airbridge.init({
     .f-num { margin-bottom: 10px; }
     .sec-head p br, .feature p br, .ccard p br, .s-cta p br { display: none; }
 
-    /* 크루 카드: 가로 스와이프 */
-    .crew-grid {
+    /* 랭크 카드: 가로 스와이프 */
+    .rank-grid {
       display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
       margin-inline: -24px; padding: 4px 24px 12px; scroll-padding-inline: 24px;
       scrollbar-width: none;
     }
-    .crew-grid::-webkit-scrollbar { display: none; }
+    .rank-grid::-webkit-scrollbar { display: none; }
     .ccard { flex: 0 0 min(290px, 78vw); scroll-snap-align: start; }
     .ccard:hover { transform: none; }
 
@@ -558,7 +556,7 @@ airbridge.init({
 
   @media (max-width: 400px) {
     .wrap, header.bar { padding-inline: 18px; }
-    .crew-grid { margin-inline: -18px; padding-inline: 18px; scroll-padding-inline: 18px; }
+    .rank-grid { margin-inline: -18px; padding-inline: 18px; scroll-padding-inline: 18px; }
     .float-chip { font-size: 12px; padding: 7px 11px; }
     .float-chip .ic { width: 20px; height: 20px; }
     .sticker { width: 80px; height: 80px; }
@@ -579,7 +577,7 @@ airbridge.init({
     <div class="hero-bgword sport" aria-hidden="true">Send it</div>
     <div class="wrap hero-grid">
       <div class="reveal in">
-        <span class="kicker">Climbing · Record · Crew</span>
+        <span class="kicker">Climbing · Record · Rank</span>
         <h1 class="display">
           <span class="line">완등의 순간을,</span>
           <span class="line tilt"><mark>클라임픽</mark>에 기록하세요.</span>
@@ -594,8 +592,8 @@ airbridge.init({
       <div class="stack" aria-hidden="false">
         <div class="phone p-back"><img src="img/hero-clip-edit.webp" width="640" height="1391" decoding="async" alt=""></div>
         <div class="phone p-front"><img src="img/hero-feed.webp" width="640" height="1391" fetchpriority="high" alt="클라임픽 홈 피드 화면 — 완등 영상과 암장, 홀드 색, 난이도가 함께 보인다"></div>
-        <div class="float-chip c1" aria-hidden="true"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>오늘 저녁 클밍고?</div>
-        <div class="float-chip c2" aria-hidden="true"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></span>14:02 오늘의 인증 완료</div>
+        <div class="float-chip c1" aria-hidden="true"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span>이번 달 완등 +24</div>
+        <div class="float-chip c2" aria-hidden="true"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></span>리더보드 #58</div>
         <div class="sticker" aria-hidden="true">
           <svg class="ring" viewBox="0 0 200 200">
             <defs><path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
@@ -609,7 +607,7 @@ airbridge.init({
   </section>
 
   <div class="tickers" aria-hidden="true">
-    <div class="ticker t2"><div class="track"><span class="ko">번개</span><i>✦</i><span class="ko">오늘의 인증</span><i>✦</i><span class="ko">주간 리포트</span><i>✦</i><span class="ko">잔디</span><i>✦</i><span class="ko">홀드 색</span><i>✦</i><span>CREW</span><i>✦</i><span>RECORD</span><i>✦</i><span>CLIMB</span><i>✦</i><span class="ko">번개</span><i>✦</i><span class="ko">오늘의 인증</span><i>✦</i><span class="ko">주간 리포트</span><i>✦</i><span class="ko">잔디</span><i>✦</i><span class="ko">홀드 색</span><i>✦</i><span>CREW</span><i>✦</i><span>RECORD</span><i>✦</i><span>CLIMB</span><i>✦</i><span class="ko">번개</span><i>✦</i><span class="ko">오늘의 인증</span><i>✦</i><span class="ko">주간 리포트</span><i>✦</i><span class="ko">잔디</span><i>✦</i><span class="ko">홀드 색</span><i>✦</i><span>CREW</span><i>✦</i><span>RECORD</span><i>✦</i><span>CLIMB</span><i>✦</i><span class="ko">번개</span><i>✦</i><span class="ko">오늘의 인증</span><i>✦</i><span class="ko">주간 리포트</span><i>✦</i><span class="ko">잔디</span><i>✦</i><span class="ko">홀드 색</span><i>✦</i><span>CREW</span><i>✦</i><span>RECORD</span><i>✦</i><span>CLIMB</span><i>✦</i></div></div>
+    <div class="ticker t2"><div class="track"><span class="ko">리더보드</span><i>✦</i><span class="ko">레이팅</span><i>✦</i><span class="ko">완등 추이</span><i>✦</i><span class="ko">잔디</span><i>✦</i><span class="ko">홀드 색</span><i>✦</i><span>RANK</span><i>✦</i><span>RECORD</span><i>✦</i><span>CLIMB</span><i>✦</i><span class="ko">리더보드</span><i>✦</i><span class="ko">레이팅</span><i>✦</i><span class="ko">완등 추이</span><i>✦</i><span class="ko">잔디</span><i>✦</i><span class="ko">홀드 색</span><i>✦</i><span>RANK</span><i>✦</i><span>RECORD</span><i>✦</i><span>CLIMB</span><i>✦</i><span class="ko">리더보드</span><i>✦</i><span class="ko">레이팅</span><i>✦</i><span class="ko">완등 추이</span><i>✦</i><span class="ko">잔디</span><i>✦</i><span class="ko">홀드 색</span><i>✦</i><span>RANK</span><i>✦</i><span>RECORD</span><i>✦</i><span>CLIMB</span><i>✦</i><span class="ko">리더보드</span><i>✦</i><span class="ko">레이팅</span><i>✦</i><span class="ko">완등 추이</span><i>✦</i><span class="ko">잔디</span><i>✦</i><span class="ko">홀드 색</span><i>✦</i><span>RANK</span><i>✦</i><span>RECORD</span><i>✦</i><span>CLIMB</span><i>✦</i></div></div>
     <div class="ticker t1"><div class="track"><span>SEND IT</span><i>✦</i><span class="ko">완등</span><i>✦</i><span>VB</span><i>✦</i><span>V1</span><i>✦</i><span>V2</span><i>✦</i><span>V3</span><i>✦</i><span>V4</span><i>✦</i><span>V5</span><i>✦</i><span>V6</span><i>✦</i><span>V7</span><i>✦</i><span>V8</span><i>✦</i><span>V9</span><i>✦</i><span>V10</span><i>✦</i><span>ONE MORE GO</span><i>✦</i><span class="ko">클라임픽</span><i>✦</i><span>SEND IT</span><i>✦</i><span class="ko">완등</span><i>✦</i><span>VB</span><i>✦</i><span>V1</span><i>✦</i><span>V2</span><i>✦</i><span>V3</span><i>✦</i><span>V4</span><i>✦</i><span>V5</span><i>✦</i><span>V6</span><i>✦</i><span>V7</span><i>✦</i><span>V8</span><i>✦</i><span>V9</span><i>✦</i><span>V10</span><i>✦</i><span>ONE MORE GO</span><i>✦</i><span class="ko">클라임픽</span><i>✦</i><span>SEND IT</span><i>✦</i><span class="ko">완등</span><i>✦</i><span>VB</span><i>✦</i><span>V1</span><i>✦</i><span>V2</span><i>✦</i><span>V3</span><i>✦</i><span>V4</span><i>✦</i><span>V5</span><i>✦</i><span>V6</span><i>✦</i><span>V7</span><i>✦</i><span>V8</span><i>✦</i><span>V9</span><i>✦</i><span>V10</span><i>✦</i><span>ONE MORE GO</span><i>✦</i><span class="ko">클라임픽</span><i>✦</i><span>SEND IT</span><i>✦</i><span class="ko">완등</span><i>✦</i><span>VB</span><i>✦</i><span>V1</span><i>✦</i><span>V2</span><i>✦</i><span>V3</span><i>✦</i><span>V4</span><i>✦</i><span>V5</span><i>✦</i><span>V6</span><i>✦</i><span>V7</span><i>✦</i><span>V8</span><i>✦</i><span>V9</span><i>✦</i><span>V10</span><i>✦</i><span>ONE MORE GO</span><i>✦</i><span class="ko">클라임픽</span><i>✦</i></div></div>
   </div>
 
@@ -657,44 +655,41 @@ airbridge.init({
     </div>
   </section>
 
-  <!-- CREW -->
-  <section class="s-crew" id="crew" aria-label="크루">
-    <div class="crew-bgword sport" aria-hidden="true">Crew</div>
+  <!-- RANK & GROWTH -->
+  <section class="s-rank" id="rank" aria-label="리더보드와 기록 성장">
+    <div class="rank-bgword sport" aria-hidden="true">Rank</div>
     <div class="wrap">
       <div class="sec-head reveal">
-        <span class="kicker">Crew mode</span>
-        <h2 class="display"><mark>함께</mark> 오르면,<br>더 즐거우니까.</h2>
-        <p class="wide">번개로 같이 오를 사람을 찾고, 오늘의 등반을 함께 기록하세요.<br> 매주 크루의 활동도 한눈에 확인할 수 있어요.</p>
+        <span class="kicker">Rank &amp; Growth</span>
+        <h2 class="display"><mark>오른 만큼</mark>,<br>숫자로 보이니까.</h2>
+        <p class="wide">레이팅으로 리더보드에서 내 순위를 확인하고,<br> 완등 기록이 얼마나 늘었는지 한눈에 비교하세요.</p>
       </div>
 
-      <div class="crew-grid">
+      <div class="rank-grid">
         <article class="ccard k1 reveal">
-          <div class="cmedia">
-            <img src="img/crew-lightning.webp" width="640" height="800" loading="lazy" decoding="async" alt="번개 모임 화면 — 오늘 저녁 클밍고? 번개 카드">
-            <img class="overlay" src="img/crew-lightning-create.webp" width="480" height="537" loading="lazy" decoding="async" alt="번개 생성 화면 — 제목, 날짜, 암장, 난이도 입력">
-          </div>
+          <div class="cmedia fit"><img src="img/leaderboard.jpg" width="900" height="819" loading="lazy" decoding="async" alt="리더보드 화면 — 티어 레이팅 랭킹 1·2·3위 시상대와 내 순위 #58"></div>
           <div class="cbody">
-            <div class="cmeta"><span class="clabel"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>번개</span><span class="cnum sport">01</span></div>
-            <h3>오늘 클밍?<br>같이 갈 사람 찾기.</h3>
-            <p>암장과 시간을 정하고, 함께 오를 크루원을 모아보세요.</p>
+            <div class="cmeta"><span class="clabel"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></span>리더보드</span><span class="cnum sport">01</span></div>
+            <h3>지금 내 순위는<br>몇 위일까?</h3>
+            <p>티어 레이팅 랭킹에서 1위부터 내 순위까지 확인하세요.</p>
           </div>
         </article>
 
         <article class="ccard k2 reveal">
-          <div class="cmedia"><img src="img/crew-today.webp" width="640" height="800" loading="lazy" decoding="async" alt="오늘의 등반 화면 — 크루원들이 올린 오늘의 인증 사진"></div>
+          <div class="cmedia"><img src="img/growth-summary.jpg" width="640" height="800" loading="lazy" decoding="async" alt="기록 요약 화면 — 완등·운동 시간·최고 난이도·등반일과 이전보다 늘어난 수치"></div>
           <div class="cbody">
-            <div class="cmeta"><span class="clabel"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></span>오늘의 인증</span><span class="cnum sport">02</span></div>
-            <h3>오늘의 등반,<br>함께 인증.</h3>
-            <p>오늘 함께한 크루원과 등반 기록을 한 장에 남겨보세요.</p>
+            <div class="cmeta"><span class="clabel"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span>기록 성장</span><span class="cnum sport">02</span></div>
+            <h3>지난번보다<br>얼마나 늘었을까.</h3>
+            <p>완등 수·운동 시간·등반일이 얼마나 늘었는지 바로 비교해요.</p>
           </div>
         </article>
 
         <article class="ccard k3 reveal">
-          <div class="cmedia"><img src="img/crew-report.webp" width="640" height="800" loading="lazy" decoding="async" alt="크루 리포트 화면 — 주간 완등 통계, TOP 크루원, 많이 방문한 암장"></div>
+          <div class="cmedia fit"><img src="img/growth-trend.jpg" width="640" height="626" loading="lazy" decoding="async" alt="난이도별 완등 추이 그래프 — 일·월·년 단위로 V0부터 V6까지의 완등 수 변화"></div>
           <div class="cbody">
-            <div class="cmeta"><span class="clabel"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg></span>리포트</span><span class="cnum sport">03</span></div>
-            <h3>한 주의 크루 활동을<br>한눈에.</h3>
-            <p>완등 수부터 방문 암장, 활발한 크루원까지 매주 확인하세요.</p>
+            <div class="cmeta"><span class="clabel"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20V12M12 20V5M19 20v-9"/></svg></span>완등 추이</span><span class="cnum sport">03</span></div>
+            <h3>난이도별 완등,<br>흐름으로 보기.</h3>
+            <p>일·월·년 단위로 난이도별 완등 추이를 그래프로 확인하세요.</p>
           </div>
         </article>
       </div>
@@ -733,7 +728,7 @@ airbridge.init({
       <div class="faq-list reveal">
         <details>
           <summary>클라임픽은 어떤 앱인가요?</summary>
-          <p class="answer">클라임픽(ClimPick)은 클라이밍 완등 영상을 문제별로 기록하고 크루와 함께 나누는 iOS·Android 앱이에요. 영상을 구간별로 잘라 암장·홀드 색·난이도·시도 횟수와 함께 남기고, 캘린더와 월간 통계로 성장을 확인할 수 있어요.</p>
+          <p class="answer">클라임픽(ClimPick)은 클라이밍 완등 영상을 문제별로 기록하고 레이팅·티어로 실력을 확인하는 iOS·Android 앱이에요. 영상을 구간별로 잘라 암장·홀드 색·난이도·시도 횟수와 함께 남기고, 캘린더와 월간 통계로 성장을 확인할 수 있어요.</p>
         </details>
         <details>
           <summary>클라임픽은 무료인가요?</summary>
@@ -742,10 +737,6 @@ airbridge.init({
         <details>
           <summary>클라이밍 영상은 어떻게 기록하나요?</summary>
           <p class="answer">운동 중에 앱에서 바로 촬영하거나, 갤러리에 있는 영상을 한 번에 최대 10개까지 올릴 수 있어요. 필요한 구간만 잘라 문제별 클립으로 저장하고, 홀드 색·난이도·시도 횟수·완등 여부를 함께 기록해요. 영상은 mp4·mov·webm 형식으로 파일당 최대 500MB까지 올릴 수 있어요.</p>
-        </details>
-        <details>
-          <summary>크루 기능으로 무엇을 할 수 있나요?</summary>
-          <p class="answer">번개로 암장과 시간을 정해 함께 오를 크루원을 모으고, 오늘의 인증으로 그날의 등반을 사진으로 남길 수 있어요. 크루 채팅으로 이야기를 나누고, 주간 리포트에서 완등 수·방문 암장·활발한 크루원을 확인해요. 한 사람당 최대 5개 크루에 가입할 수 있어요.</p>
         </details>
         <details>
           <summary>서비스 관련 제휴/문의 내용이 있어요. 어디로 연락드려야 하나요?</summary>
