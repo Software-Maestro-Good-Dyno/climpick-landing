@@ -766,12 +766,15 @@ airbridge.init({
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
-  new QRCode(document.getElementById("qr"), {
-    text: "https://climpick.netlify.app/download",
-    width: 148, height: 148,
-    colorDark: "#0E120E", colorLight: "#FFFFFF",
-    correctLevel: QRCode.CorrectLevel.M
-  });
+  // cdnjs가 막히거나 장애가 나도 아래 스크립트(스크롤 등장, 버튼 연결)는 돌아야 한다
+  if (window.QRCode) {
+    new QRCode(document.getElementById("qr"), {
+      text: "https://climpick.netlify.app/download",
+      width: 148, height: 148,
+      colorDark: "#0E120E", colorLight: "#FFFFFF",
+      correctLevel: QRCode.CorrectLevel.M
+    });
+  }
 
   var reveals = document.querySelectorAll(".reveal:not(.in)");
   if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
