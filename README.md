@@ -13,6 +13,8 @@
 | `index.html` | `/` | 랜딩 페이지 |
 | `privacy.html` | `/privacy` | 개인정보처리방침 |
 | `terms.html` | `/terms` | 이용약관 |
+| `terms-20260911.html` | `/terms-20260911` | 이용약관 2026년 9월 11일판(이전 판, 검색 제외). 본문과 부칙이 링크하니 지우지 말 것 |
+| `privacy-20260911.html` | `/privacy-20260911` | 개인정보처리방침 2026년 9월 11일판(이전 판, 검색 제외). 새 판과 옛 약관이 링크하니 지우지 말 것 |
 | `download.html` | `/download` | QR·공유용 링크. 기기에 맞는 스토어로 리디렉트 (Android → Google Play, iOS → App Store, 그 외 → 랜딩) |
 
 빌드 과정이 없는 정적 HTML입니다. 스크린샷 이미지는 `index.html` 안에 base64로 들어 있어서 파일 하나로 동작합니다. 브라우저로 파일을 바로 열어 확인할 수 있습니다.
