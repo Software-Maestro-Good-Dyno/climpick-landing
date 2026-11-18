@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://climpick.netlify.app/</loc>
+    <loc>https://climpick.com/</loc>
     <lastmod>2026-10-05</lastmod>
   </url>
   <url>
-    <loc>https://climpick.netlify.app/privacy</loc>
+    <loc>https://climpick.com/privacy</loc>
     <lastmod>2026-11-14</lastmod>
   </url>
   <url>
-    <loc>https://climpick.netlify.app/terms</loc>
+    <loc>https://climpick.com/terms</loc>
     <lastmod>2026-11-05</lastmod>
   </url>
   <url>
-    <loc>https://climpick.netlify.app/delete-account</loc>
+    <loc>https://climpick.com/delete-account</loc>
     <lastmod>2026-11-17</lastmod>
   </url>
 </urlset>
