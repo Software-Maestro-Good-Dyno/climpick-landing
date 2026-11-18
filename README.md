@@ -20,7 +20,7 @@
 | `scripts/` | - | 암장 페이지 생성 스크립트(`export-gyms.sql`, `build-gyms.py`). 아래 "암장 페이지를 다시 만들 때" 참고 |
 | `_redirects` | - | Netlify 리디렉트 규칙. `climpick.netlify.app`으로 들어온 요청을 `climpick.com`의 같은 경로로 301 이동 |
 
-빌드 과정이 없는 정적 HTML입니다. 브라우저로 파일을 바로 열어 확인할 수 있습니다. 스크린샷 이미지는 `img/`에 있습니다. `gyms/`만 스크립트로 미리 만들어 커밋해 둡니다(Netlify에서 빌드하지 않습니다).
+빌드 과정이 없는 정적 HTML입니다. 루트의 페이지는 브라우저로 파일을 바로 열어 확인할 수 있습니다. `gyms/`는 `/gyms/`처럼 사이트 루트 기준 경로를 써서, 레포 폴더에서 `python3 -m http.server`를 띄운 뒤 `http://localhost:8000/gyms/`로 확인합니다. 스크린샷 이미지는 `img/`에 있습니다. `gyms/`만 스크립트로 미리 만들어 커밋해 둡니다(Netlify에서 빌드하지 않습니다).
 
 ## 배포
 
