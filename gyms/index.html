@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>암장별 난이도 색 순서 모음 — 클라임픽</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="클라이밍 암장 230곳의 난이도 색 순서와 대략의 V 등급을 지역별로 정리했어요. 서울·경기·부산·대구 등 16개 지역. 클라임픽(ClimPick).">
+<link rel="canonical" href="https://climpick.com/gyms/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0A0E0A">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="클라임픽 ClimPick">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://climpick.com/gyms/">
+<meta property="og:title" content="암장별 난이도 색 순서 모음 — 클라임픽">
+<meta property="og:description" content="클라이밍 암장 230곳의 난이도 색 순서와 대략의 V 등급을 지역별로 정리했어요. 서울·경기·부산·대구 등 16개 지역. 클라임픽(ClimPick).">
+<meta property="og:image" content="https://climpick.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&family=Archivo:ital,wght@1,900&display=swap">
+<style>
+  :root {
+    --night: #0A0E0A; --night-line: #243024; --chalk: #F3F4EE; --paper: #FFFFFF;
+    --ink: #0E120E; --lime: #5BE36A; --green: #2FAE3E; --muted: #58635A; --line: #DCE0D8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--chalk); color: var(--ink);
+    font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.75; -webkit-font-smoothing: antialiased; word-break: keep-all; overflow-wrap: anywhere;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 3px solid #FFC83D; outline-offset: 2px; }
+  .wrap { max-width: 800px; margin: 0 auto; padding-inline: 24px; }
+
+  header.top { background: var(--night); color: #F1F5EF; padding-block: 18px 56px; }
+  .top-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .wordmark { font-family: "Archivo", sans-serif; font-style: italic; font-weight: 900; font-size: 22px; color: var(--lime); text-decoration: none; }
+  .switch a { color: #C9D2C8; text-decoration: none; font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 999px; border: 1.5px solid rgba(255,255,255,.18); }
+  .crumbs { margin-top: 36px; font-size: 13px; color: #9DA99C; }
+  .crumbs a { color: #C9D2C8; text-decoration: none; }
+  header.top h1 { font-family: "Black Han Sans", sans-serif; font-weight: 400; font-size: clamp(28px, 5vw, 42px); line-height: 1.2; margin-top: 8px; }
+  header.top .meta { margin-top: 10px; color: #9DA99C; font-size: 14px; }
+
+  main { padding-block: 0 72px; }
+  .doc { background: var(--paper); border-radius: 20px; margin-top: -28px; padding: clamp(24px, 5vw, 48px); box-shadow: 0 10px 30px rgba(20,40,18,.06); }
+  .lead { font-size: 16px; }
+  section { margin-top: 40px; }
+  h2 { font-size: 19px; font-weight: 700; line-height: 1.4; padding-left: 14px; position: relative; }
+  h2::before { content: ""; position: absolute; left: 0; top: .3em; width: 5px; height: 1.05em; background: var(--lime); transform: skewX(-14deg); }
+  p, ul, ol, .table, .ladder, .chips, dl { margin-top: 12px; }
+  .note { font-size: 13px; color: var(--muted); }
+
+  .ladder { list-style: none; display: grid; gap: 8px; counter-reset: step; }
+  .ladder li { display: grid; grid-template-columns: 28px 1fr auto; align-items: center; gap: 12px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px; }
+  .ladder .n { font-weight: 700; color: var(--muted); font-size: 13px; text-align: center; }
+  .ladder .name { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+  .ladder .v { font-size: 13px; color: var(--muted); white-space: nowrap; }
+  .sw { width: 22px; height: 22px; border-radius: 6px; flex: none; border: 1px solid rgba(0,0,0,.12); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+  .chips li { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 14px; }
+  .chips .sw { width: 16px; height: 16px; border-radius: 50%; }
+
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 8px 18px; font-size: 15px; }
+  dt { color: var(--muted); font-weight: 700; }
+
+  .cta { margin-top: 44px; padding: 22px; border-radius: 16px; background: var(--night); color: #F1F5EF; }
+  .cta strong { display: block; font-size: 17px; }
+  .cta p { margin-top: 6px; color: #C9D2C8; font-size: 14px; }
+  .cta .btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .cta .btns a { display: inline-block; padding: 9px 16px; border-radius: 999px; background: var(--lime); color: var(--ink); font-weight: 700; font-size: 14px; text-decoration: none; }
+  .cta .btns a + a { background: transparent; color: #F1F5EF; border: 1.5px solid rgba(255,255,255,.3); }
+
+  .region { margin-top: 36px; }
+  .gym-list { list-style: none; margin-top: 10px; display: grid; gap: 8px; }
+  .gym-list a { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); text-decoration: none; font-weight: 700; }
+  .gym-list a:hover { border-color: var(--green); }
+  .strip { display: flex; gap: 3px; flex: none; }
+  .strip i { width: 12px; height: 12px; border-radius: 3px; border: 1px solid rgba(0,0,0,.12); }
+  .toc { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; }
+  .toc a { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--chalk); color: var(--ink); text-decoration: none; font-size: 14px; }
+
+  footer { background: var(--night); color: #9DA99C; font-size: 13px; padding-block: 32px; text-align: center; }
+  footer a { color: #C9D2C8; text-decoration: none; margin: 0 8px; }
+  footer a:hover { color: var(--lime); }
+
+  @media (max-width: 560px) {
+    .wrap { padding-inline: 16px; }
+    .doc { border-radius: 16px; }
+    .ladder li { grid-template-columns: 22px 1fr; }
+    .ladder .v { grid-column: 2; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "암장별 난이도 색 순서",
+  "url": "https://climpick.com/gyms/",
+  "isPartOf": {
+    "@id": "https://climpick.com/#website"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": 230,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://climpick.com/gyms/347",
+        "name": "강서클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://climpick.com/gyms/406",
+        "name": "그루트클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://climpick.com/gyms/414",
+        "name": "닷클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "url": "https://climpick.com/gyms/350",
+        "name": "더월클라이밍 마곡점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "url": "https://climpick.com/gyms/391",
+        "name": "더월클라이밍 연남점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "url": "https://climpick.com/gyms/405",
+        "name": "더클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "url": "https://climpick.com/gyms/335",
+        "name": "더클라임 강남점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "url": "https://climpick.com/gyms/400",
+        "name": "더클라임 논현점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "url": "https://climpick.com/gyms/348",
+        "name": "더클라임 마곡점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "url": "https://climpick.com/gyms/423",
+        "name": "더클라임 문래점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "url": "https://climpick.com/gyms/354",
+        "name": "더클라임 사당점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "url": "https://climpick.com/gyms/408",
+        "name": "더클라임 성수점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "url": "https://climpick.com/gyms/358",
+        "name": "더클라임 신림점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "url": "https://climpick.com/gyms/329",
+        "name": "더클라임 신사점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "url": "https://climpick.com/gyms/328",
+        "name": "더클라임 양재점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 16,
+        "url": "https://climpick.com/gyms/390",
+        "name": "더클라임 연남점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 17,
+        "url": "https://climpick.com/gyms/387",
+        "name": "더클라임 이수점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 18,
+        "url": "https://climpick.com/gyms/352",
+        "name": "더플라스틱클라이밍 염창점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 19,
+        "url": "https://climpick.com/gyms/375",
+        "name": "드림캐처클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 20,
+        "url": "https://climpick.com/gyms/415",
+        "name": "루트클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 21,
+        "url": "https://climpick.com/gyms/427",
+        "name": "몽키즈 클라이밍 영등포점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 22,
+        "url": "https://climpick.com/gyms/382",
+        "name": "몽키즈클라이밍 답십리점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 23,
+        "url": "https://climpick.com/gyms/398",
+        "name": "몽키즈클라이밍 북가좌점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 24,
+        "url": "https://climpick.com/gyms/450",
+        "name": "몽키즈클라이밍 신내점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 25,
+        "url": "https://climpick.com/gyms/378",
+        "name": "몽키즈클라이밍 중계점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 26,
+        "url": "https://climpick.com/gyms/361",
+        "name": "버티고클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 27,
+        "url": "https://climpick.com/gyms/388",
+        "name": "볼더생활"
+      },
+      {
+        "@type": "ListItem",
+        "position": 28,
+        "url": "https://climpick.com/gyms/372",
+        "name": "볼더클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 29,
+        "url": "https://climpick.com/gyms/412",
+        "name": "브릭스클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 30,
+        "url": "https://climpick.com/gyms/376",
+        "name": "비숍클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 31,
+        "url": "https://climpick.com/gyms/383",
+        "name": "산타클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 32,
+        "url": "https://climpick.com/gyms/422",
+        "name": "서울볼더스 목동"
+      },
+      {
+        "@type": "ListItem",
+        "position": 33,
+        "url": "https://climpick.com/gyms/429",
+        "name": "서울볼더스 선유"
+      },
+      {
+        "@type": "ListItem",
+        "position": 34,
+        "url": "https://climpick.com/gyms/365",
+        "name": "서울숲클라이밍 구로점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 35,
+        "url": "https://climpick.com/gyms/426",
+        "name": "서울숲클라이밍 영등포점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 36,
+        "url": "https://climpick.com/gyms/418",
+        "name": "서울숲클라이밍 잠실점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 37,
+        "url": "https://climpick.com/gyms/438",
+        "name": "서울숲클라이밍 종로점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 38,
+        "url": "https://climpick.com/gyms/394",
+        "name": "서울시산악문화체험센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 39,
+        "url": "https://climpick.com/gyms/444",
+        "name": "손상원 클라이밍짐 을지로점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 40,
+        "url": "https://climpick.com/gyms/404",
+        "name": "손상원클라이밍짐 강남점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 41,
+        "url": "https://climpick.com/gyms/356",
+        "name": "스톤즈클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 42,
+        "url": "https://climpick.com/gyms/397",
+        "name": "신촌담장"
+      },
+      {
+        "@type": "ListItem",
+        "position": 43,
+        "url": "https://climpick.com/gyms/440",
+        "name": "알레클라이밍 혜화점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 44,
+        "url": "https://climpick.com/gyms/337",
+        "name": "알레클라임"
+      },
+      {
+        "@type": "ListItem",
+        "position": 45,
+        "url": "https://climpick.com/gyms/430",
+        "name": "알레클라임 영등포점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 46,
+        "url": "https://climpick.com/gyms/346",
+        "name": "어거스트클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 47,
+        "url": "https://climpick.com/gyms/364",
+        "name": "에이스클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 48,
+        "url": "https://climpick.com/gyms/432",
+        "name": "오프더월클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 49,
+        "url": "https://climpick.com/gyms/341",
+        "name": "온플릭클라이밍 천호점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 50,
+        "url": "https://climpick.com/gyms/386",
+        "name": "웨어하우스 볼더링"
+      },
+      {
+        "@type": "ListItem",
+        "position": 51,
+        "url": "https://climpick.com/gyms/445",
+        "name": "을지로 담장 클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 52,
+        "url": "https://climpick.com/gyms/360",
+        "name": "조규복클라이밍센터 강변점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 53,
+        "url": "https://climpick.com/gyms/393",
+        "name": "코알라클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 54,
+        "url": "https://climpick.com/gyms/449",
+        "name": "크래커클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 55,
+        "url": "https://climpick.com/gyms/353",
+        "name": "클라이밍88"
+      },
+      {
+        "@type": "ListItem",
+        "position": 56,
+        "url": "https://climpick.com/gyms/336",
+        "name": "클라이밍파크 강남점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 57,
+        "url": "https://climpick.com/gyms/407",
+        "name": "클라이밍파크 성수점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 58,
+        "url": "https://climpick.com/gyms/334",
+        "name": "클라이밍파크 신논현점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 59,
+        "url": "https://climpick.com/gyms/441",
+        "name": "클라이밍파크 종로점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 60,
+        "url": "https://climpick.com/gyms/327",
+        "name": "클라이밍파크 한티점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 61,
+        "url": "https://climpick.com/gyms/431",
+        "name": "클라임웍스"
+      },
+      {
+        "@type": "ListItem",
+        "position": 62,
+        "url": "https://climpick.com/gyms/416",
+        "name": "클라임투더문"
+      },
+      {
+        "@type": "ListItem",
+        "position": 63,
+        "url": "https://climpick.com/gyms/331",
+        "name": "타잔101클라이밍 압구정점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 64,
+        "url": "https://climpick.com/gyms/446",
+        "name": "플래시볼더스 클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 65,
+        "url": "https://climpick.com/gyms/399",
+        "name": "피커스 신촌점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 66,
+        "url": "https://climpick.com/gyms/439",
+        "name": "피커스 종로점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 67,
+        "url": "https://climpick.com/gyms/367",
+        "name": "피커스클라이밍 구로"
+      },
+      {
+        "@type": "ListItem",
+        "position": 68,
+        "url": "https://climpick.com/gyms/435",
+        "name": "행클라임 클라이밍짐 구파발점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 69,
+        "url": "https://climpick.com/gyms/396",
+        "name": "홍대클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 70,
+        "url": "https://climpick.com/gyms/411",
+        "name": "훅클라이밍 왕십리점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 71,
+        "url": "https://climpick.com/gyms/121",
+        "name": "7942캠프"
+      },
+      {
+        "@type": "ListItem",
+        "position": 72,
+        "url": "https://climpick.com/gyms/166",
+        "name": "CL클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 73,
+        "url": "https://climpick.com/gyms/127",
+        "name": "경기레포츠클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 74,
+        "url": "https://climpick.com/gyms/97",
+        "name": "그래비티 클라이밍 수원역점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 75,
+        "url": "https://climpick.com/gyms/92",
+        "name": "그래비티클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 76,
+        "url": "https://climpick.com/gyms/81",
+        "name": "그립픽클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 77,
+        "url": "https://climpick.com/gyms/66",
+        "name": "다이노 클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 78,
+        "url": "https://climpick.com/gyms/129",
+        "name": "더그릿클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 79,
+        "url": "https://climpick.com/gyms/117",
+        "name": "더렛지 클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 80,
+        "url": "https://climpick.com/gyms/123",
+        "name": "더바이브클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 81,
+        "url": "https://climpick.com/gyms/76",
+        "name": "더볼더"
+      },
+      {
+        "@type": "ListItem",
+        "position": 82,
+        "url": "https://climpick.com/gyms/41",
+        "name": "더클라임 일산점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 83,
+        "url": "https://climpick.com/gyms/58",
+        "name": "락클라이밍산본"
+      },
+      {
+        "@type": "ListItem",
+        "position": 84,
+        "url": "https://climpick.com/gyms/78",
+        "name": "락트리클라이밍 분당"
+      },
+      {
+        "@type": "ListItem",
+        "position": 85,
+        "url": "https://climpick.com/gyms/55",
+        "name": "마운틴스타 클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 86,
+        "url": "https://climpick.com/gyms/50",
+        "name": "매드짐 광명 클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 87,
+        "url": "https://climpick.com/gyms/163",
+        "name": "몽키즈클라이밍 동탄반송점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 88,
+        "url": "https://climpick.com/gyms/103",
+        "name": "몽키즈클라이밍 시흥배곧점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 89,
+        "url": "https://climpick.com/gyms/134",
+        "name": "몽키즈클라이밍 용인역북점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 90,
+        "url": "https://climpick.com/gyms/40",
+        "name": "몽키즈클라이밍 일산마두점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 91,
+        "url": "https://climpick.com/gyms/149",
+        "name": "몽키즈클라이밍 파주운정점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 92,
+        "url": "https://climpick.com/gyms/69",
+        "name": "무브온클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 93,
+        "url": "https://climpick.com/gyms/104",
+        "name": "볼더가든"
+      },
+      {
+        "@type": "ListItem",
+        "position": 94,
+        "url": "https://climpick.com/gyms/126",
+        "name": "볼더메이트 클라이밍 기흥점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 95,
+        "url": "https://climpick.com/gyms/132",
+        "name": "볼더메이트 클라이밍 수지점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 96,
+        "url": "https://climpick.com/gyms/169",
+        "name": "볼더박스 클라임"
+      },
+      {
+        "@type": "ListItem",
+        "position": 97,
+        "url": "https://climpick.com/gyms/57",
+        "name": "산본클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 98,
+        "url": "https://climpick.com/gyms/137",
+        "name": "샤모니클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 99,
+        "url": "https://climpick.com/gyms/77",
+        "name": "손상원클라이밍짐 판교점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 100,
+        "url": "https://climpick.com/gyms/93",
+        "name": "슈퍼비 클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 101,
+        "url": "https://climpick.com/gyms/56",
+        "name": "스파이시 클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 102,
+        "url": "https://climpick.com/gyms/108",
+        "name": "안산베이스캠프 클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 103,
+        "url": "https://climpick.com/gyms/115",
+        "name": "에어즈락 클라이밍 범계점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 104,
+        "url": "https://climpick.com/gyms/91",
+        "name": "에픽클라임"
+      },
+      {
+        "@type": "ListItem",
+        "position": 105,
+        "url": "https://climpick.com/gyms/111",
+        "name": "원더월클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 106,
+        "url": "https://climpick.com/gyms/141",
+        "name": "이천굿클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 107,
+        "url": "https://climpick.com/gyms/74",
+        "name": "캐치스톤클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 108,
+        "url": "https://climpick.com/gyms/44",
+        "name": "코알라클라이밍 킨텍스점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 109,
+        "url": "https://climpick.com/gyms/47",
+        "name": "클라이밍 업더월 일산점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 110,
+        "url": "https://climpick.com/gyms/106",
+        "name": "클라이밍 트리클"
+      },
+      {
+        "@type": "ListItem",
+        "position": 111,
+        "url": "https://climpick.com/gyms/48",
+        "name": "클라이밍 하이프렉스"
+      },
+      {
+        "@type": "ListItem",
+        "position": 112,
+        "url": "https://climpick.com/gyms/83",
+        "name": "클라임 어스 모란점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 113,
+        "url": "https://climpick.com/gyms/143",
+        "name": "클라임바운스 창전점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 114,
+        "url": "https://climpick.com/gyms/158",
+        "name": "클라임어스 미사점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 115,
+        "url": "https://climpick.com/gyms/165",
+        "name": "클라임어클락"
+      },
+      {
+        "@type": "ListItem",
+        "position": 116,
+        "url": "https://climpick.com/gyms/142",
+        "name": "클라임원"
+      },
+      {
+        "@type": "ListItem",
+        "position": 117,
+        "url": "https://climpick.com/gyms/102",
+        "name": "클라임잇 클라이밍 목감점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 118,
+        "url": "https://climpick.com/gyms/124",
+        "name": "클라임크루"
+      },
+      {
+        "@type": "ListItem",
+        "position": 119,
+        "url": "https://climpick.com/gyms/94",
+        "name": "클라임투게더 수원영통센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 120,
+        "url": "https://climpick.com/gyms/88",
+        "name": "킨디클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 121,
+        "url": "https://climpick.com/gyms/99",
+        "name": "킹콩클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 122,
+        "url": "https://climpick.com/gyms/136",
+        "name": "킹클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 123,
+        "url": "https://climpick.com/gyms/144",
+        "name": "파주클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 124,
+        "url": "https://climpick.com/gyms/71",
+        "name": "팍스클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 125,
+        "url": "https://climpick.com/gyms/67",
+        "name": "퍼즐클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 126,
+        "url": "https://climpick.com/gyms/113",
+        "name": "펀클라임짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 127,
+        "url": "https://climpick.com/gyms/38",
+        "name": "페퍼 클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 128,
+        "url": "https://climpick.com/gyms/90",
+        "name": "포에버클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 129,
+        "url": "https://climpick.com/gyms/151",
+        "name": "프리월 클라이밍짐 평택지제점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 130,
+        "url": "https://climpick.com/gyms/98",
+        "name": "피크닉클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 131,
+        "url": "https://climpick.com/gyms/61",
+        "name": "픽클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 132,
+        "url": "https://climpick.com/gyms/167",
+        "name": "홀드앤락클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 133,
+        "url": "https://climpick.com/gyms/152",
+        "name": "힐앤토클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 134,
+        "url": "https://climpick.com/gyms/256",
+        "name": "노루클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 135,
+        "url": "https://climpick.com/gyms/287",
+        "name": "뉴비클라이밍 수성점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 136,
+        "url": "https://climpick.com/gyms/264",
+        "name": "대구클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 137,
+        "url": "https://climpick.com/gyms/289",
+        "name": "동성로클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 138,
+        "url": "https://climpick.com/gyms/279",
+        "name": "벽클라이밍스쿨"
+      },
+      {
+        "@type": "ListItem",
+        "position": 139,
+        "url": "https://climpick.com/gyms/284",
+        "name": "볼더라운지 플립 대구점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 140,
+        "url": "https://climpick.com/gyms/259",
+        "name": "손세동클라이밍 대구두류점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 141,
+        "url": "https://climpick.com/gyms/260",
+        "name": "점프실내암벽"
+      },
+      {
+        "@type": "ListItem",
+        "position": 142,
+        "url": "https://climpick.com/gyms/266",
+        "name": "초크업 더 볼더"
+      },
+      {
+        "@type": "ListItem",
+        "position": 143,
+        "url": "https://climpick.com/gyms/262",
+        "name": "초크업클라이밍 월성점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 144,
+        "url": "https://climpick.com/gyms/281",
+        "name": "초크업클라이밍 침산점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 145,
+        "url": "https://climpick.com/gyms/239",
+        "name": "그랩잇 클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 146,
+        "url": "https://climpick.com/gyms/243",
+        "name": "레드원클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 147,
+        "url": "https://climpick.com/gyms/244",
+        "name": "바위클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 148,
+        "url": "https://climpick.com/gyms/242",
+        "name": "온클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 149,
+        "url": "https://climpick.com/gyms/251",
+        "name": "인케이브 클라이밍짐 상무점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 150,
+        "url": "https://climpick.com/gyms/240",
+        "name": "첨단빛고을실내암벽"
+      },
+      {
+        "@type": "ListItem",
+        "position": 151,
+        "url": "https://climpick.com/gyms/245",
+        "name": "클라이븐클라이밍 컴퍼니"
+      },
+      {
+        "@type": "ListItem",
+        "position": 152,
+        "url": "https://climpick.com/gyms/252",
+        "name": "클라임라운지"
+      },
+      {
+        "@type": "ListItem",
+        "position": 153,
+        "url": "https://climpick.com/gyms/246",
+        "name": "핸드워크클라이밍 양산점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 154,
+        "url": "https://climpick.com/gyms/248",
+        "name": "핸드워크클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 155,
+        "url": "https://climpick.com/gyms/312",
+        "name": "돌멩이클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 156,
+        "url": "https://climpick.com/gyms/309",
+        "name": "락오디세이 동의대점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 157,
+        "url": "https://climpick.com/gyms/301",
+        "name": "리버스락"
+      },
+      {
+        "@type": "ListItem",
+        "position": 158,
+        "url": "https://climpick.com/gyms/321",
+        "name": "오터클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 159,
+        "url": "https://climpick.com/gyms/322",
+        "name": "웨이브락 남천점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 160,
+        "url": "https://climpick.com/gyms/299",
+        "name": "웨이브락 부산대점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 161,
+        "url": "https://climpick.com/gyms/310",
+        "name": "웨이브락 서면점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 162,
+        "url": "https://climpick.com/gyms/319",
+        "name": "짱클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 163,
+        "url": "https://climpick.com/gyms/318",
+        "name": "클럽스파이더클라이밍 사상점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 164,
+        "url": "https://climpick.com/gyms/317",
+        "name": "포고클라임"
+      },
+      {
+        "@type": "ListItem",
+        "position": 165,
+        "url": "https://climpick.com/gyms/465",
+        "name": "간석실내암벽"
+      },
+      {
+        "@type": "ListItem",
+        "position": 166,
+        "url": "https://climpick.com/gyms/471",
+        "name": "디스커버리 클라임스퀘어 ICN"
+      },
+      {
+        "@type": "ListItem",
+        "position": 167,
+        "url": "https://climpick.com/gyms/476",
+        "name": "디스커버리 클라임스퀘어 송도점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 168,
+        "url": "https://climpick.com/gyms/477",
+        "name": "디스커버리씨에스 송도지점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 169,
+        "url": "https://climpick.com/gyms/468",
+        "name": "볼리클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 170,
+        "url": "https://climpick.com/gyms/475",
+        "name": "비블럭클라이밍 송도점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 171,
+        "url": "https://climpick.com/gyms/479",
+        "name": "비블럭클라이밍 영종하늘도시점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 172,
+        "url": "https://climpick.com/gyms/478",
+        "name": "클라이밍줌"
+      },
+      {
+        "@type": "ListItem",
+        "position": 173,
+        "url": "https://climpick.com/gyms/473",
+        "name": "클라임스퀘어 청라점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 174,
+        "url": "https://climpick.com/gyms/467",
+        "name": "허브클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 175,
+        "url": "https://climpick.com/gyms/495",
+        "name": "군산 스포츠클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 176,
+        "url": "https://climpick.com/gyms/504",
+        "name": "볼더덴"
+      },
+      {
+        "@type": "ListItem",
+        "position": 177,
+        "url": "https://climpick.com/gyms/502",
+        "name": "어센트클라이밍 만성혁신"
+      },
+      {
+        "@type": "ListItem",
+        "position": 178,
+        "url": "https://climpick.com/gyms/501",
+        "name": "어센트클라이밍 전북대"
+      },
+      {
+        "@type": "ListItem",
+        "position": 179,
+        "url": "https://climpick.com/gyms/503",
+        "name": "올라클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 180,
+        "url": "https://climpick.com/gyms/508",
+        "name": "전주BK클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 181,
+        "url": "https://climpick.com/gyms/500",
+        "name": "클라임팜"
+      },
+      {
+        "@type": "ListItem",
+        "position": 182,
+        "url": "https://climpick.com/gyms/509",
+        "name": "하드락클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 183,
+        "url": "https://climpick.com/gyms/505",
+        "name": "한'S 클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 184,
+        "url": "https://climpick.com/gyms/494",
+        "name": "홀드온"
+      },
+      {
+        "@type": "ListItem",
+        "position": 185,
+        "url": "https://climpick.com/gyms/175",
+        "name": "두클라이밍 김해점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 186,
+        "url": "https://climpick.com/gyms/185",
+        "name": "볼더서퍼 클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 187,
+        "url": "https://climpick.com/gyms/198",
+        "name": "비스타 클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 188,
+        "url": "https://climpick.com/gyms/193",
+        "name": "빅클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 189,
+        "url": "https://climpick.com/gyms/186",
+        "name": "어썸클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 190,
+        "url": "https://climpick.com/gyms/194",
+        "name": "예티클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 191,
+        "url": "https://climpick.com/gyms/176",
+        "name": "코아클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 192,
+        "url": "https://climpick.com/gyms/199",
+        "name": "클라임존"
+      },
+      {
+        "@type": "ListItem",
+        "position": 193,
+        "url": "https://climpick.com/gyms/181",
+        "name": "홀드야미클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 194,
+        "url": "https://climpick.com/gyms/20",
+        "name": "간현암벽공원"
+      },
+      {
+        "@type": "ListItem",
+        "position": 195,
+        "url": "https://climpick.com/gyms/22",
+        "name": "고고클라이밍 2호점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 196,
+        "url": "https://climpick.com/gyms/8",
+        "name": "아임낫볼더"
+      },
+      {
+        "@type": "ListItem",
+        "position": 197,
+        "url": "https://climpick.com/gyms/15",
+        "name": "차클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 198,
+        "url": "https://climpick.com/gyms/26",
+        "name": "춘천클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 199,
+        "url": "https://climpick.com/gyms/1",
+        "name": "클라이밍강릉"
+      },
+      {
+        "@type": "ListItem",
+        "position": 200,
+        "url": "https://climpick.com/gyms/17",
+        "name": "클라임투게더"
+      },
+      {
+        "@type": "ListItem",
+        "position": 201,
+        "url": "https://climpick.com/gyms/236",
+        "name": "김대우암벽교실"
+      },
+      {
+        "@type": "ListItem",
+        "position": 202,
+        "url": "https://climpick.com/gyms/215",
+        "name": "노보클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 203,
+        "url": "https://climpick.com/gyms/226",
+        "name": "레드포인트클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 204,
+        "url": "https://climpick.com/gyms/237",
+        "name": "아띠클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 205,
+        "url": "https://climpick.com/gyms/207",
+        "name": "올라클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 206,
+        "url": "https://climpick.com/gyms/213",
+        "name": "포시즌클라이밍 산동점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 207,
+        "url": "https://climpick.com/gyms/234",
+        "name": "포항스파이더클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 208,
+        "url": "https://climpick.com/gyms/461",
+        "name": "9클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 209,
+        "url": "https://climpick.com/gyms/452",
+        "name": "등반세계 최병호 클라이밍 센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 210,
+        "url": "https://climpick.com/gyms/457",
+        "name": "라온클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 211,
+        "url": "https://climpick.com/gyms/458",
+        "name": "몽클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 212,
+        "url": "https://climpick.com/gyms/453",
+        "name": "업클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 213,
+        "url": "https://climpick.com/gyms/454",
+        "name": "월담클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 214,
+        "url": "https://climpick.com/gyms/511",
+        "name": "오르멍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 215,
+        "url": "https://climpick.com/gyms/512",
+        "name": "오르명실내암벽등반"
+      },
+      {
+        "@type": "ListItem",
+        "position": 216,
+        "url": "https://climpick.com/gyms/515",
+        "name": "픽스볼더 아라점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 217,
+        "url": "https://climpick.com/gyms/516",
+        "name": "픽스볼더클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 218,
+        "url": "https://climpick.com/gyms/530",
+        "name": "락트리 천안아산"
+      },
+      {
+        "@type": "ListItem",
+        "position": 219,
+        "url": "https://climpick.com/gyms/529",
+        "name": "락트리스포츠클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 220,
+        "url": "https://climpick.com/gyms/525",
+        "name": "서산클라이밍"
+      },
+      {
+        "@type": "ListItem",
+        "position": 221,
+        "url": "https://climpick.com/gyms/533",
+        "name": "클라임맥스"
+      },
+      {
+        "@type": "ListItem",
+        "position": 222,
+        "url": "https://climpick.com/gyms/545",
+        "name": "스포츠아일랜드 청주오창센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 223,
+        "url": "https://climpick.com/gyms/551",
+        "name": "오르락클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 224,
+        "url": "https://climpick.com/gyms/547",
+        "name": "청주락클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 225,
+        "url": "https://climpick.com/gyms/541",
+        "name": "타기클라이밍센터"
+      },
+      {
+        "@type": "ListItem",
+        "position": 226,
+        "url": "https://climpick.com/gyms/294",
+        "name": "대전하나클라이밍짐"
+      },
+      {
+        "@type": "ListItem",
+        "position": 227,
+        "url": "https://climpick.com/gyms/292",
+        "name": "어웨이크클라이밍 타임월드점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 228,
+        "url": "https://climpick.com/gyms/295",
+        "name": "클라이밍짐 리드 유성점"
+      },
+      {
+        "@type": "ListItem",
+        "position": 229,
+        "url": "https://climpick.com/gyms/489",
+        "name": "원클라임"
+      },
+      {
+        "@type": "ListItem",
+        "position": 230,
+        "url": "https://climpick.com/gyms/485",
+        "name": "카르페클라임"
+      }
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="top-row">
+      <a class="wordmark" href="/">ClimPick</a>
+      <nav class="switch" aria-label="암장"><a href="/gyms/">암장 목록</a></nav>
+    </div>
+    <nav class="crumbs" aria-label="현재 위치"><a href="/">클라임픽</a> › 암장</nav>
+    <h1>암장별 난이도 색 순서</h1>
+    <p class="meta">암장 230곳 · 지역 16곳</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article class="doc">
+      <p class="lead">클라임픽에서 난이도 체계를 확인한 암장 230곳의 난이도 색 순서를 모았어요. 암장을 누르면 쉬운 색부터 어려운 색까지 순서와 대략의 V 등급을 볼 수 있어요.</p>
+      <section>
+        <h2>지역</h2>
+        <ul class="toc">
+          <li><a href="#r-서울">서울 70</a></li>
+          <li><a href="#r-경기">경기 63</a></li>
+          <li><a href="#r-대구">대구 11</a></li>
+          <li><a href="#r-광주">광주 10</a></li>
+          <li><a href="#r-부산">부산 10</a></li>
+          <li><a href="#r-인천">인천 10</a></li>
+          <li><a href="#r-전북">전북 10</a></li>
+          <li><a href="#r-경남">경남 9</a></li>
+          <li><a href="#r-강원">강원 7</a></li>
+          <li><a href="#r-경북">경북 7</a></li>
+          <li><a href="#r-울산">울산 6</a></li>
+          <li><a href="#r-제주">제주 4</a></li>
+          <li><a href="#r-충남">충남 4</a></li>
+          <li><a href="#r-충북">충북 4</a></li>
+          <li><a href="#r-대전">대전 3</a></li>
+          <li><a href="#r-전남">전남 2</a></li>
+        </ul>
+      </section>
+
+      <section class="region" id="r-서울">
+        <h2>서울</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/347"><span>강서클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/406"><span>그루트클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#FF6FA5"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/414"><span>닷클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/350"><span>더월클라이밍 마곡점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/391"><span>더월클라이밍 연남점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/405"><span>더클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#0066FF"></i><i style="background:#00A652"></i><i style="background:#FF0000"></i></span></a></li>
+          <li><a href="/gyms/335"><span>더클라임 강남점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/400"><span>더클라임 논현점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/348"><span>더클라임 마곡점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/423"><span>더클라임 문래점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/354"><span>더클라임 사당점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/408"><span>더클라임 성수점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/358"><span>더클라임 신림점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/329"><span>더클라임 신사점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/328"><span>더클라임 양재점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/390"><span>더클라임 연남점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/387"><span>더클라임 이수점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/352"><span>더플라스틱클라이밍 염창점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/375"><span>드림캐처클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/415"><span>루트클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/427"><span>몽키즈 클라이밍 영등포점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/382"><span>몽키즈클라이밍 답십리점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/398"><span>몽키즈클라이밍 북가좌점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/450"><span>몽키즈클라이밍 신내점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/378"><span>몽키즈클라이밍 중계점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/361"><span>버티고클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#ACD062"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i></span></a></li>
+          <li><a href="/gyms/388"><span>볼더생활</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8B4513"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/372"><span>볼더클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#ACD062"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/412"><span>브릭스클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8B4513"></i><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/376"><span>비숍클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/383"><span>산타클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FFFFFF"></i><i style="background:#00A652"></i><i style="background:#FF6FA5"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/422"><span>서울볼더스 목동</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/429"><span>서울볼더스 선유</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/365"><span>서울숲클라이밍 구로점</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/426"><span>서울숲클라이밍 영등포점</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/418"><span>서울숲클라이밍 잠실점</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/438"><span>서울숲클라이밍 종로점</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/394"><span>서울시산악문화체험센터</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/444"><span>손상원 클라이밍짐 을지로점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/404"><span>손상원클라이밍짐 강남점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/356"><span>스톤즈클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/397"><span>신촌담장</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/440"><span>알레클라이밍 혜화점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#3EB489"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#FF6FA5"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/337"><span>알레클라임</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#3EB489"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#FF6FA5"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/430"><span>알레클라임 영등포점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#3EB489"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#FF6FA5"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/346"><span>어거스트클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF0000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/364"><span>에이스클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#FF6FA5"></i></span></a></li>
+          <li><a href="/gyms/432"><span>오프더월클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/341"><span>온플릭클라이밍 천호점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/386"><span>웨어하우스 볼더링</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FF6FA5"></i></span></a></li>
+          <li><a href="/gyms/445"><span>을지로 담장 클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/360"><span>조규복클라이밍센터 강변점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/393"><span>코알라클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF8000"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/449"><span>크래커클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/353"><span>클라이밍88</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#FF6FA5"></i></span></a></li>
+          <li><a href="/gyms/336"><span>클라이밍파크 강남점</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/407"><span>클라이밍파크 성수점</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/334"><span>클라이밍파크 신논현점</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/441"><span>클라이밍파크 종로점</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/327"><span>클라이밍파크 한티점</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/431"><span>클라임웍스</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/416"><span>클라임투더문</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/331"><span>타잔101클라이밍 압구정점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#ACD062"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/446"><span>플래시볼더스 클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/399"><span>피커스 신촌점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/439"><span>피커스 종로점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/367"><span>피커스클라이밍 구로</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/435"><span>행클라임 클라이밍짐 구파발점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/396"><span>홍대클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/411"><span>훅클라이밍 왕십리점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#9E9E9E"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-경기">
+        <h2>경기</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/121"><span>7942캠프</span><span class="strip" aria-hidden="true"></span></a></li>
+          <li><a href="/gyms/166"><span>CL클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/127"><span>경기레포츠클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#FFFFFF"></i><i style="background:#0066FF"></i><i style="background:#00A652"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/97"><span>그래비티 클라이밍 수원역점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FF6FA5"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/92"><span>그래비티클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FF6FA5"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/81"><span>그립픽클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FF6FA5"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/66"><span>다이노 클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/129"><span>더그릿클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/117"><span>더렛지 클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/123"><span>더바이브클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/76"><span>더볼더</span><span class="strip" aria-hidden="true"></span></a></li>
+          <li><a href="/gyms/41"><span>더클라임 일산점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/58"><span>락클라이밍산본</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/78"><span>락트리클라이밍 분당</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FF6FA5"></i><i style="background:#8B4513"></i><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/55"><span>마운틴스타 클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/50"><span>매드짐 광명 클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#000000"></i><i style="background:#FF0000"></i><i style="background:#01C7FC"></i><i style="background:#0066FF"></i></span></a></li>
+          <li><a href="/gyms/163"><span>몽키즈클라이밍 동탄반송점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/103"><span>몽키즈클라이밍 시흥배곧점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/134"><span>몽키즈클라이밍 용인역북점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/40"><span>몽키즈클라이밍 일산마두점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/149"><span>몽키즈클라이밍 파주운정점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/69"><span>무브온클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/104"><span>볼더가든</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FF6FA5"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/126"><span>볼더메이트 클라이밍 기흥점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/132"><span>볼더메이트 클라이밍 수지점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/169"><span>볼더박스 클라임</span><span class="strip" aria-hidden="true"><i style="background:#9E9E9E"></i><i style="background:#FF0000"></i><i style="background:#FFD400"></i><i style="background:#0066FF"></i><i style="background:#FF6FA5"></i><i style="background:#FF8000"></i><i style="background:#ACD062"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/57"><span>산본클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#FF8000"></i><i style="background:#0066FF"></i><i style="background:#00A652"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/137"><span>샤모니클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/77"><span>손상원클라이밍짐 판교점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/93"><span>슈퍼비 클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/56"><span>스파이시 클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#00A652"></i><i style="background:#FFD400"></i><i style="background:#FF0000"></i><i style="background:#1B1464"></i><i style="background:#FFFFFF"></i><i style="background:#0066FF"></i><i style="background:#FF8000"></i><i style="background:#8B4513"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/108"><span>안산베이스캠프 클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#1B1464"></i><i style="background:#FF6FA5"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/115"><span>에어즈락 클라이밍 범계점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/91"><span>에픽클라임</span><span class="strip" aria-hidden="true"></span></a></li>
+          <li><a href="/gyms/111"><span>원더월클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/141"><span>이천굿클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/74"><span>캐치스톤클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#FF6FA5"></i></span></a></li>
+          <li><a href="/gyms/44"><span>코알라클라이밍 킨텍스점</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF8000"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/47"><span>클라이밍 업더월 일산점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/106"><span>클라이밍 트리클</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i></span></a></li>
+          <li><a href="/gyms/48"><span>클라이밍 하이프렉스</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/83"><span>클라임 어스 모란점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/143"><span>클라임바운스 창전점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#FF0000"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/158"><span>클라임어스 미사점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/165"><span>클라임어클락</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i><i style="background:#FF6FA5"></i></span></a></li>
+          <li><a href="/gyms/142"><span>클라임원</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/102"><span>클라임잇 클라이밍 목감점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/124"><span>클라임크루</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/94"><span>클라임투게더 수원영통센터</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/88"><span>킨디클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/99"><span>킹콩클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#FF6FA5"></i></span></a></li>
+          <li><a href="/gyms/136"><span>킹클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/144"><span>파주클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#0066FF"></i><i style="background:#00A652"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/71"><span>팍스클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF0000"></i><i style="background:#ACD062"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/67"><span>퍼즐클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/113"><span>펀클라임짐</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF6FA5"></i><i style="background:#00A652"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/38"><span>페퍼 클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/90"><span>포에버클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/151"><span>프리월 클라이밍짐 평택지제점</span><span class="strip" aria-hidden="true"><i style="background:#00A652"></i><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/98"><span>피크닉클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i><i style="background:#FF6FA5"></i></span></a></li>
+          <li><a href="/gyms/61"><span>픽클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/167"><span>홀드앤락클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF6FA5"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/152"><span>힐앤토클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-대구">
+        <h2>대구</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/256"><span>노루클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/287"><span>뉴비클라이밍 수성점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/264"><span>대구클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/289"><span>동성로클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#FF8000"></i><i style="background:#FF0000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/279"><span>벽클라이밍스쿨</span><span class="strip" aria-hidden="true"><i style="background:#9E9E9E"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/284"><span>볼더라운지 플립 대구점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/259"><span>손세동클라이밍 대구두류점</span><span class="strip" aria-hidden="true"><i style="background:#01C7FC"></i><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF6FA5"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/260"><span>점프실내암벽</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#FFFFFF"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#ACD062"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/266"><span>초크업 더 볼더</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#FF6FA5"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/262"><span>초크업클라이밍 월성점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/281"><span>초크업클라이밍 침산점</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-광주">
+        <h2>광주</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/239"><span>그랩잇 클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/243"><span>레드원클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#ACD062"></i><i style="background:#9E9E9E"></i><i style="background:#01C7FC"></i><i style="background:#8E44AD"></i><i style="background:#1B1464"></i><i style="background:#FF0000"></i></span></a></li>
+          <li><a href="/gyms/244"><span>바위클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#FF8000"></i><i style="background:#8E44AD"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/242"><span>온클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/251"><span>인케이브 클라이밍짐 상무점</span><span class="strip" aria-hidden="true"><i style="background:#9E9E9E"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#1B1464"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/240"><span>첨단빛고을실내암벽</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#FF0000"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/245"><span>클라이븐클라이밍 컴퍼니</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/252"><span>클라임라운지</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/246"><span>핸드워크클라이밍 양산점</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#FF0000"></i><i style="background:#1B1464"></i><i style="background:#FFFFFF"></i><i style="background:#0066FF"></i><i style="background:#FF8000"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/248"><span>핸드워크클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#00A652"></i><i style="background:#FFD400"></i><i style="background:#FF0000"></i><i style="background:#1B1464"></i><i style="background:#FFFFFF"></i><i style="background:#0066FF"></i><i style="background:#FF8000"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-부산">
+        <h2>부산</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/312"><span>돌멩이클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#8B4513"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#FF6FA5"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/309"><span>락오디세이 동의대점</span><span class="strip" aria-hidden="true"><i style="background:#FF8000"></i><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#ACD062"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/301"><span>리버스락</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/321"><span>오터클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#FF6FA5"></i></span></a></li>
+          <li><a href="/gyms/322"><span>웨이브락 남천점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/299"><span>웨이브락 부산대점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/310"><span>웨이브락 서면점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/319"><span>짱클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/318"><span>클럽스파이더클라이밍 사상점</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#00A652"></i><i style="background:#9E9E9E"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/317"><span>포고클라임</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-인천">
+        <h2>인천</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/465"><span>간석실내암벽</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/471"><span>디스커버리 클라임스퀘어 ICN</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FFFFFF"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/476"><span>디스커버리 클라임스퀘어 송도점</span><span class="strip" aria-hidden="true"><i style="background:#FF8000"></i><i style="background:#FFFFFF"></i><i style="background:#01C7FC"></i><i style="background:#0066FF"></i><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/477"><span>디스커버리씨에스 송도지점</span><span class="strip" aria-hidden="true"><i style="background:#FF8000"></i><i style="background:#FFFFFF"></i><i style="background:#01C7FC"></i><i style="background:#0066FF"></i><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/468"><span>볼리클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/475"><span>비블럭클라이밍 송도점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF6FA5"></i><i style="background:#0066FF"></i><i style="background:#9E9E9E"></i><i style="background:#00A652"></i><i style="background:#FF0000"></i><i style="background:#1B1464"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/479"><span>비블럭클라이밍 영종하늘도시점</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF6FA5"></i><i style="background:#0066FF"></i><i style="background:#9E9E9E"></i><i style="background:#00A652"></i><i style="background:#FF0000"></i><i style="background:#1B1464"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/478"><span>클라이밍줌</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/473"><span>클라임스퀘어 청라점</span><span class="strip" aria-hidden="true"><i style="background:#FF8000"></i><i style="background:#FFFFFF"></i><i style="background:#01C7FC"></i><i style="background:#0066FF"></i><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/467"><span>허브클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-전북">
+        <h2>전북</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/495"><span>군산 스포츠클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/504"><span>볼더덴</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/502"><span>어센트클라이밍 만성혁신</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/501"><span>어센트클라이밍 전북대</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/503"><span>올라클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF8000"></i><i style="background:#1B1464"></i><i style="background:#FF0000"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/508"><span>전주BK클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/500"><span>클라임팜</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#0066FF"></i><i style="background:#ACD062"></i><i style="background:#00A652"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/509"><span>하드락클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/505"><span>한&#x27;S 클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#FF0000"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/494"><span>홀드온</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-경남">
+        <h2>경남</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/175"><span>두클라이밍 김해점</span><span class="strip" aria-hidden="true"><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#FF0000"></i><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i><i style="background:#1B1464"></i></span></a></li>
+          <li><a href="/gyms/185"><span>볼더서퍼 클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/198"><span>비스타 클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/193"><span>빅클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#8E44AD"></i><i style="background:#1B1464"></i><i style="background:#0066FF"></i><i style="background:#00A652"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/186"><span>어썸클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/194"><span>예티클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#9E9E9E"></i><i style="background:#ACD062"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/176"><span>코아클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/199"><span>클라임존</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF6FA5"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/181"><span>홀드야미클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FFFFFF"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-강원">
+        <h2>강원</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/20"><span>간현암벽공원</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#00A652"></i><i style="background:#FFD400"></i><i style="background:#FF0000"></i><i style="background:#1B1464"></i><i style="background:#FFFFFF"></i><i style="background:#0066FF"></i><i style="background:#FF8000"></i><i style="background:#8B4513"></i><i style="background:#ACD062"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/22"><span>고고클라이밍 2호점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF0000"></i><i style="background:#0066FF"></i><i style="background:#00A652"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/8"><span>아임낫볼더</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/15"><span>차클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#00A652"></i><i style="background:#8E44AD"></i><i style="background:#FF0000"></i><i style="background:#0066FF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/26"><span>춘천클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i></span></a></li>
+          <li><a href="/gyms/1"><span>클라이밍강릉</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#FF6FA5"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/17"><span>클라임투게더</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-경북">
+        <h2>경북</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/236"><span>김대우암벽교실</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/215"><span>노보클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/226"><span>레드포인트클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#9E9E9E"></i><i style="background:#FFD400"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i></span></a></li>
+          <li><a href="/gyms/237"><span>아띠클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/207"><span>올라클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#0066FF"></i><i style="background:#00A652"></i><i style="background:#FF0000"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/213"><span>포시즌클라이밍 산동점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/234"><span>포항스파이더클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i><i style="background:#FFFFFF"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-울산">
+        <h2>울산</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/461"><span>9클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/452"><span>등반세계 최병호 클라이밍 센터</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF0000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#01C7FC"></i><i style="background:#1B1464"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/457"><span>라온클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#1B1464"></i><i style="background:#8B4513"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/458"><span>몽클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/453"><span>업클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#FFFFFF"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/454"><span>월담클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#000000"></i><i style="background:#8B4513"></i><i style="background:#8E44AD"></i><i style="background:#1B1464"></i><i style="background:#0066FF"></i><i style="background:#00A652"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF0000"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-제주">
+        <h2>제주</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/511"><span>오르멍</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#000000"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/512"><span>오르명실내암벽등반</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#000000"></i><i style="background:#8B4513"></i></span></a></li>
+          <li><a href="/gyms/515"><span>픽스볼더 아라점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/516"><span>픽스볼더클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-충남">
+        <h2>충남</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/530"><span>락트리 천안아산</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/529"><span>락트리스포츠클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#FFFFFF"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/525"><span>서산클라이밍</span><span class="strip" aria-hidden="true"><i style="background:#ACD062"></i><i style="background:#00A652"></i><i style="background:#FFD400"></i><i style="background:#0066FF"></i><i style="background:#FF0000"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/533"><span>클라임맥스</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#000000"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-충북">
+        <h2>충북</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/545"><span>스포츠아일랜드 청주오창센터</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i><i style="background:#FFFFFF"></i></span></a></li>
+          <li><a href="/gyms/551"><span>오르락클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF6FA5"></i><i style="background:#FFD400"></i><i style="background:#ACD062"></i><i style="background:#00A652"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#9E9E9E"></i></span></a></li>
+          <li><a href="/gyms/547"><span>청주락클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#FF8000"></i><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/541"><span>타기클라이밍센터</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#0066FF"></i><i style="background:#00A652"></i><i style="background:#ACD062"></i><i style="background:#FFD400"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-대전">
+        <h2>대전</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/294"><span>대전하나클라이밍짐</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FFD400"></i><i style="background:#0066FF"></i><i style="background:#8E44AD"></i><i style="background:#000000"></i><i style="background:#FF0000"></i><i style="background:#00A652"></i></span></a></li>
+          <li><a href="/gyms/292"><span>어웨이크클라이밍 타임월드점</span><span class="strip" aria-hidden="true"><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#8E44AD"></i><i style="background:#8B4513"></i><i style="background:#9E9E9E"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/295"><span>클라이밍짐 리드 유성점</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF6FA5"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i></span></a></li>
+        </ul>
+      </section>
+      <section class="region" id="r-전남">
+        <h2>전남</h2>
+        <ul class="gym-list">
+          <li><a href="/gyms/489"><span>원클라임</span><span class="strip" aria-hidden="true"><i style="background:#FFFFFF"></i><i style="background:#FF0000"></i><i style="background:#FF8000"></i><i style="background:#FFD400"></i><i style="background:#00A652"></i><i style="background:#0066FF"></i><i style="background:#1B1464"></i><i style="background:#FF6FA5"></i><i style="background:#000000"></i></span></a></li>
+          <li><a href="/gyms/485"><span>카르페클라임</span><span class="strip" aria-hidden="true"><i style="background:#8E44AD"></i><i style="background:#1B1464"></i><i style="background:#0066FF"></i><i style="background:#00A652"></i><i style="background:#FFD400"></i><i style="background:#FF8000"></i><i style="background:#FF0000"></i></span></a></li>
+        </ul>
+      </section>
+
+      <aside class="cta">
+        <strong>다니는 암장의 완등 기록을 클라임픽에 남기세요</strong>
+        <p>완등 영상을 문제별로 잘라 홀드 색·난이도와 함께 기록하고, 레이팅·티어와 30일 리포트로 성장을 확인할 수 있어요.</p>
+        <div class="btns">
+          <a href="https://apps.apple.com/kr/app/id6789773061" target="_blank" rel="noopener">App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.climpick" target="_blank" rel="noopener">Google Play</a>
+        </div>
+      </aside>
+      <p class="note" style="margin-top:24px">2026-11-18 기준 정보예요.</p>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="/">홈</a><a href="/gyms/">암장 목록</a><a href="/privacy"><strong>개인정보처리방침</strong></a><a href="/terms">이용약관</a>
+    <p style="margin-top:10px">© 2026 Software Maestro Good Dyno</p>
+  </div>
+</footer>
+
+</body>
+</html>
