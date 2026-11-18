@@ -16,6 +16,7 @@
 | `delete-account.html` | `/delete-account` | 계정 삭제 안내. Google Play 데이터 보안 양식의 계정 삭제 링크로 쓰는 주소라 이름을 바꾸거나 지우지 말 것. 앱·개발자 이름은 Play 등록정보 그대로(개발자 "굿다이노") 둘 것 |
 | `terms-20260911.html` | `/terms-20260911` | 이용약관 2026년 9월 11일판(이전 판, 검색 제외). 본문과 부칙이 링크하니 지우지 말 것 |
 | `download.html` | `/download` | QR·공유용 링크. 기기에 맞는 스토어로 리디렉트 (Android → Google Play, iOS → App Store, 그 외 → 랜딩) |
+| `_redirects` | - | Netlify 리디렉트 규칙. `climpick.netlify.app`으로 들어온 요청을 `climpick.com`의 같은 경로로 301 이동 |
 
 빌드 과정이 없는 정적 HTML입니다. 스크린샷 이미지는 `index.html` 안에 base64로 들어 있어서 파일 하나로 동작합니다. 브라우저로 파일을 바로 열어 확인할 수 있습니다.
 
