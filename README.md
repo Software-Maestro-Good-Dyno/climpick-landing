@@ -2,7 +2,7 @@
 
 클라이밍 기록 앱 **클라임픽(ClimPick)** 의 랜딩 페이지와 정책 문서입니다.
 
-- 사이트: https://climpick.netlify.app
+- 사이트: https://climpick.com
 - App Store: https://apps.apple.com/kr/app/id6789773061
 - Google Play: https://play.google.com/store/apps/details?id=com.climpick
 

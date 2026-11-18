@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://climpick.netlify.app/sitemap.xml
+Sitemap: https://climpick.com/sitemap.xml
